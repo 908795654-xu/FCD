@@ -1,0 +1,17 @@
+dataset,pred_len,variant,deformable_enable,mse,mae,log_path
+ETTh1,720,def0,0,0.42860984802246094,0.45432278513908386,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/h1s512p720SARlcdef0.log
+ETTh1,720,def1,1,0.4294688403606415,0.4541671574115753,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/h1s512p720SARlcdef1.log
+ETTh2,720,def0,0,0.3844214677810669,0.42241841554641724,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/h2s512p720SARlcdef0.log
+ETTh2,720,def1,1,0.3845963478088379,0.42222410440444946,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/h2s512p720SARlcdef1.log
+ETTm1,720,def0,0,0.42088237404823303,0.41393542289733887,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/m1s512p720SARlcdef0.log
+ETTm1,720,def1,1,0.4180768132209778,0.41237872838974,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/m1s512p720SARlcdef1.log
+ETTm2,720,def0,0,0.35984745621681213,0.3808147609233856,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/m2s512p720SARlcdef0.log
+ETTm2,720,def1,1,0.35781845450401306,0.37817177176475525,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/m2s512p720SARlcdef1.log
+ETTh1,96,def0,0,0.362678587436676,0.3932568430900574,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/h1s512p96SARlcdef0.log
+ETTh1,96,def1,1,0.36216452717781067,0.39260557293891907,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/h1s512p96SARlcdef1.log
+ETTh2,96,def0,0,0.27307283878326416,0.3330850899219513,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/h2s512p96SARlcdef0.log
+ETTh2,96,def1,1,0.27198657393455505,0.33217570185661316,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/h2s512p96SARlcdef1.log
+ETTm1,96,def0,0,0.2890464961528778,0.33675146102905273,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/m1s512p96SARlcdef0.log
+ETTm1,96,def1,1,0.29022732377052307,0.33738139271736145,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/m1s512p96SARlcdef1.log
+ETTm2,96,def0,0,0.15978878736495972,0.24747276306152344,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/m2s512p96SARlcdef0.log
+ETTm2,96,def1,1,0.15942727029323578,0.24749502539634705,/home/bkai/CG2/SACQ/logs/deformable_ablation/logs/m2s512p96SARlcdef1.log

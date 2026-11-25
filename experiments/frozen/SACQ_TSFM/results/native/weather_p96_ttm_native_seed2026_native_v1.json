@@ -1,0 +1,32 @@
+{
+  "protocol": "native_v1",
+  "dataset": "weather",
+  "backbone": "ttm",
+  "prediction_length": 96,
+  "seed": 2026,
+  "context_length": 512,
+  "batch_size": 128,
+  "series_chunk": 128,
+  "script_sha256": "2f26d7616834e1b768dd3e87121ff3b2e9a9125caf689595a84b89c969a405d8",
+  "downstream_training": false,
+  "run_name": "weather_p96_ttm_native_seed2026_native_v1",
+  "complete": true,
+  "model_path": "/home/bkai/CG2/SACQ_TSFM/models_cache/ttm-512-96-ft-r2.1",
+  "model_config_sha256": "9e437e55d74815fb77e2c89fd674c587224bab2156ae142bca64456217501ace",
+  "dataset_sha256": "c7f365673c36a3a802d56936478a23cd3f6f336a820859a2b5172b5b6754dd42",
+  "test_windows": 10445,
+  "evaluated_windows": 10445,
+  "evaluated_elements": 21057120,
+  "test": {
+    "mse": 0.1569548082389534,
+    "mae": 0.20391863011618402
+  },
+  "method": "native_direct_point_forecast",
+  "dtype": "float32",
+  "metric_accumulation": "float64",
+  "metric_scale": "BenchmarkDataset standardized scale; no dataset inverse transform",
+  "timer_padding": null,
+  "elapsed_seconds": 1.924940438941121,
+  "peak_memory_mb": 255.68505859375,
+  "torch_version": "2.10.0+cu128"
+}

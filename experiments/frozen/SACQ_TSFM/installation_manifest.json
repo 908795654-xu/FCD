@@ -1,0 +1,96 @@
+{
+  "profile": "readme_sacq_default_pe_v2",
+  "target": "D:\\桌面\\Xuzhengchao\\SACQ_workbench\\SACQ_repository\\experiments\\frozen\\SACQ_TSFM",
+  "original_root": "/home/bkai/CG2/SACQ",
+  "legacy_root": "/home/bkai/CG2/SACQ_TSFM",
+  "original_hashes": {
+    "README.md": "8c0fba29163578f4cf179f395e779b4650637a0776111bf7a1fc84669cc79ff7",
+    "paper.tex": "b34899d746fae82e4ea5ce4e0e49744f62dc6fbf30b2a81a91eaeb127d200aa1",
+    "layers/PatchTST_backbone.py": "054ba6d43e7a130c40fe24e4dd1c725d1aab48b967a02cc8abed9ad5d755b55a",
+    "layers/PatchTST_layers.py": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+    "layers/sacq_coarse.py": "570e8091161aa2812f059c6330d2e8cd0a710920a9428f08b5b9e96d3e37f7d1",
+    "layers/sacq_pe.py": "09db57f2f1b96fbf6264d38bc18c98432438cd2c446598ef7dbdbcaef2ba5ea5",
+    "models/PatchTST.py": "2c5334abdec86dceeb679beaef73f928ec9eaa965d25724ab252fdefef92981a",
+    "run_longExp.py": "ffd345b7218c6f1f4253d194f1e04d6735dca2af3e420acc39d51424b646828b"
+  },
+  "reused_sources": [
+    {
+      "source": "/home/bkai/CG2/SACQ_TSFM/adapters/__init__.py",
+      "target": "adapters/__init__.py",
+      "sha256": "3b3f77712051d8517ed847ca8cccad52683c14f13e95891eeccdda4af2fef9ae"
+    },
+    {
+      "source": "/home/bkai/CG2/SACQ_TSFM/adapters/base.py",
+      "target": "adapters/base.py",
+      "sha256": "c1000765b3c46da33bd3350208fb9b13a89d8f0e94eafeeff2c7c7bbb638277c"
+    },
+    {
+      "source": "/home/bkai/CG2/SACQ_TSFM/adapters/chronos_bolt_adapter.py",
+      "target": "adapters/chronos_bolt_adapter.py",
+      "sha256": "c353a00131bd6ddf917d8bc708957167c99391d6e8f5208c89245420a6ea6ac3"
+    },
+    {
+      "source": "/home/bkai/CG2/SACQ_TSFM/adapters/timer_adapter.py",
+      "target": "adapters/timer_adapter.py",
+      "sha256": "65bb71039b1c5949cab80da0f7dc75df18321a18005f43f19f0da989f3960ffd"
+    },
+    {
+      "source": "/home/bkai/CG2/SACQ_TSFM/adapters/ttm_adapter.py",
+      "target": "adapters/ttm_adapter.py",
+      "sha256": "47dbf3644555fce73a8865708b7e67655f4470d8f18df28bbf75e10f53e48053"
+    },
+    {
+      "source": "/home/bkai/CG2/SACQ_TSFM/data_provider/__init__.py",
+      "target": "data_provider/__init__.py",
+      "sha256": "9f1ebf668587f5d466005317421521d4697a1f93a47c3cf61aa19d10923be1ef"
+    },
+    {
+      "source": "/home/bkai/CG2/SACQ_TSFM/data_provider/data_loader.py",
+      "target": "data_provider/data_loader.py",
+      "sha256": "db2c548b36de9eaccc046dac036bf7f4d12ed4f426defb5c4f77703d0dbbdd30"
+    },
+    {
+      "source": "/home/bkai/CG2/SACQ_TSFM/data_provider/scaling.py",
+      "target": "data_provider/scaling.py",
+      "sha256": "c19ae18f37eb54e71bf104ba99e4ff282174be541346ea7b95857c42ae0e8d5b"
+    }
+  ],
+  "installed_hashes": {
+    "configs/pe_profile.json": "a2098ea2db06c1ea4389a18500e6be2182c321a793a2e5cbe673152e8384b07d",
+    "models/__init__.py": "3db004da2a12425d724160b2317e65ed513d58abed0d2c86b681eee983bf3b63",
+    "models/factory_pe.py": "e4c6de57c4de76a8658ef39b1f70fc9f771367f61f163661cfd016a60c82008b",
+    "models/linear_head.py": "a3db976275f9a3a91499be2a78a996ad072ce1b97ad87e5f9cec58d2d4d87c55",
+    "models/sacq_forecaster.py": "2dd2d07f18de29403f89002d94a41065dc71ccab9bf980a76d5ef0c8af3d3bc8",
+    "README.md": "c24dad2d0759c4698db12f687d5cf4ac58e555850c70f71ee5e252d386e50202",
+    "reference/original/layers/PatchTST_backbone.py": "054ba6d43e7a130c40fe24e4dd1c725d1aab48b967a02cc8abed9ad5d755b55a",
+    "reference/original/layers/PatchTST_layers.py": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+    "reference/original/layers/sacq_coarse.py": "570e8091161aa2812f059c6330d2e8cd0a710920a9428f08b5b9e96d3e37f7d1",
+    "reference/original/layers/sacq_pe.py": "09db57f2f1b96fbf6264d38bc18c98432438cd2c446598ef7dbdbcaef2ba5ea5",
+    "reference/original/models/PatchTST.py": "2c5334abdec86dceeb679beaef73f928ec9eaa965d25724ab252fdefef92981a",
+    "reference/original/README.md": "8c0fba29163578f4cf179f395e779b4650637a0776111bf7a1fc84669cc79ff7",
+    "reference/original/run_longExp.py": "ffd345b7218c6f1f4253d194f1e04d6735dca2af3e420acc39d51424b646828b",
+    "reference/source_manifest.json": "dc9f9b275a30ebb6cd49cd20b38235109fa2a8deb064544076c54e0a38c908ff",
+    "sacq_core/__init__.py": "15b959b7e3bfee63927494c74b16fdc6ecdf601dedca92e212def4e2975795ae",
+    "sacq_core/coarse.py": "570e8091161aa2812f059c6330d2e8cd0a710920a9428f08b5b9e96d3e37f7d1",
+    "sacq_core/head.py": "8aa5c3e98c000766ba8b2e779e667c52c6f97bcb6896b7c2fd20580a640a342d",
+    "sacq_core/pe_initializer.py": "6f3351f661cfc772883b1015f200ee987e698e98a9682de6c366aa495036c225",
+    "sacq_core/positional.py": "09db57f2f1b96fbf6264d38bc18c98432438cd2c446598ef7dbdbcaef2ba5ea5",
+    "scripts/validate_v2.py": "7c3e032564132e2aea6f80cc2b9878a5c917224a50ccc8420a970bc5f0b020df",
+    "settings.py": "75bcddfbcaf5496db247652e37aefc680618738b5ba27361c6cadad337964623",
+    "adapters/__init__.py": "3b3f77712051d8517ed847ca8cccad52683c14f13e95891eeccdda4af2fef9ae",
+    "adapters/base.py": "c1000765b3c46da33bd3350208fb9b13a89d8f0e94eafeeff2c7c7bbb638277c",
+    "adapters/chronos_bolt_adapter.py": "c353a00131bd6ddf917d8bc708957167c99391d6e8f5208c89245420a6ea6ac3",
+    "adapters/timer_adapter.py": "65bb71039b1c5949cab80da0f7dc75df18321a18005f43f19f0da989f3960ffd",
+    "adapters/ttm_adapter.py": "47dbf3644555fce73a8865708b7e67655f4470d8f18df28bbf75e10f53e48053",
+    "data_provider/__init__.py": "9f1ebf668587f5d466005317421521d4697a1f93a47c3cf61aa19d10923be1ef",
+    "data_provider/data_loader.py": "db2c548b36de9eaccc046dac036bf7f4d12ed4f426defb5c4f77703d0dbbdd30",
+    "data_provider/scaling.py": "c19ae18f37eb54e71bf104ba99e4ff282174be541346ea7b95857c42ae0e8d5b"
+  },
+  "payload_sha256": "31778c624400bc9a9c9370fb2970f57689790906270ad2ebd3195b41f1b54b28",
+  "training_started": false,
+  "notes": "Core AST unchanged; explicit future-query PE restored",
+  "layout": "merged; explicit factory_pe entry retains PE profiles",
+  "historical_installation_manifest_archive": "reproduction/archives/frozen_before_merge_20261125.zip",
+  "distribution_note": "Paper drafts and internal archive omitted; runtime source hashes retained.",
+  "license_update": "Attribution-only source comments; no model computation changed."
+}

@@ -1,0 +1,36 @@
+{
+  "backbone": "ttm",
+  "head": "linear",
+  "context_length": 512,
+  "prediction_length": 96,
+  "n_vars": 7,
+  "hidden_dim": 128,
+  "patch_count": 9,
+  "trainable_parameters": 110688,
+  "frozen_parameters": 855100,
+  "dataset": "ETTh1",
+  "seed": 2026,
+  "device": "cuda:0",
+  "batch_size": 8,
+  "epochs": 3,
+  "max_train_batches": 50,
+  "max_val_batches": 20,
+  "learning_rate": 0.0001,
+  "loss": "mse",
+  "train_losses": [
+    0.5741299200057983,
+    0.5198725271224975,
+    0.47105081856250763
+  ],
+  "initial_val": {
+    "mse": 0.4425348100208101,
+    "mae": 0.49376497268676756
+  },
+  "final_val": {
+    "mse": 0.2963933581397647,
+    "mae": 0.4026063430876959
+  },
+  "elapsed_seconds": 1.8585770369973034,
+  "peak_memory_mb": 27.59619140625,
+  "backbone_unchanged": true
+}

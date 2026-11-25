@@ -1,0 +1,28 @@
+[
+  {
+    "pred_len": 96,
+    "s1_setting": "TwF2s512p96_PatchTST_ETTh2_sl512_pl96_hF_0",
+    "s2_setting": "TwS2s512p96_PatchTST_ETTh2_sl512_pl96_hS2_0",
+    "s1_rc": 0,
+    "s1_sec": 87.8,
+    "f_mse": 0.2747372090816498,
+    "f_mae": 0.3353148400783539,
+    "s2_rc": 0,
+    "s2_sec": 68.7,
+    "s_mse": 0.27616751194000244,
+    "s_mae": 0.3357960283756256
+  },
+  {
+    "pred_len": 720,
+    "s1_setting": "TwF2s512p720_PatchTST_ETTh2_sl512_pl720_hF_0",
+    "s2_setting": "TwS2s512p720_PatchTST_ETTh2_sl512_pl720_hS2_0",
+    "s1_rc": 0,
+    "s1_sec": 68.6,
+    "f_mse": 0.3830777704715729,
+    "f_mae": 0.4255858361721039,
+    "s2_rc": 0,
+    "s2_sec": 50.4,
+    "s_mse": 0.38246291875839233,
+    "s_mae": 0.4252556264400482
+  }
+]

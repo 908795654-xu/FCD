@@ -1,0 +1,21 @@
+{
+  "note": "初始基线来自 twostage gatelearn；自动 sweep 会覆盖更优结果",
+  "source": "logs/shift_patchtst_etth1_twostage/summary.json",
+  "model": "PatchTST",
+  "train_dataset": "ETTh1",
+  "eval_dataset": "ETTh1",
+  "shift_preset": "stage_combo",
+  "head_type": "sacq_cross_attention",
+  "twostage": 1,
+  "sacq_gate_loss_weight": 0.2,
+  "sacq_corr_sign_loss_weight": 0.1,
+  "sacq_shift_boost_loss_weight": 0.0,
+  "sacq_alpha_temperature": 0.5,
+  "sacq_drift_alpha_enable": 0,
+  "mse": 44.231,
+  "recovery_steps": -1,
+  "alpha_pre_mean": 0.448,
+  "alpha_post300_max": 0.542,
+  "score": 124.231,
+  "updated_at": "2026-05-26T00:00:00"
+}

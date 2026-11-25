@@ -1,0 +1,8 @@
+START mse GPU 2 STARTLOG  logcosh/home/bkai/CG2/weather_loss_remaining_verification/20261117_151148_347137/mse/train.log
+ GPU 3 LOG /home/bkai/CG2/weather_loss_remaining_verification/20261117_151148_347137/logcosh/train.log
+DONE logcosh {'mse': 0.3140941858291626, 'mae': 0.3270292282104492}
+START flatten_scaled GPU 3 LOG /home/bkai/CG2/weather_loss_remaining_verification/20261117_151148_347137/flatten_scaled/train.log
+DONE mse {'mse': 0.3108898997306824, 'mae': 0.33066967129707336}
+DONE flatten_scaled {'mse': 0.31636080145835876, 'mae': 0.32997703552246094}
+ALL_3_MISSING_CONTROLS_FINISHED_FOUR_COLUMNS_READY
+RESULTS /home/bkai/CG2/weather_loss_remaining_verification/20261117_151148_347137/comparison.json

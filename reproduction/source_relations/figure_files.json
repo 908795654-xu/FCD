@@ -1,0 +1,17 @@
+[
+  "reproduction/source_relations/figure_inputs/Figs/new/corrpdata.csv",
+  "reproduction/source_relations/figure_inputs/plot_etth1_corruption_2x2.py",
+  "reproduction/source_relations/figure_inputs/Figs/new/96mask.png",
+  "reproduction/source_relations/figure_inputs/Figs/new/96spike.png",
+  "reproduction/source_relations/figure_inputs/Figs/new/720mask.png",
+  "reproduction/source_relations/figure_inputs/Figs/new/720spike.png",
+  "reproduction/source_relations/original/logs/etth1_sar_vs_sacq_search/spike_train_tail_shift.csv",
+  "reproduction/source_relations/original/logs/weather_sar_vs_sacq_search/spike_train_tail_shift.csv",
+  "reproduction/source_relations/original/logs/sacq_param_sweep/sacq_param_sweep.csv",
+  "reproduction/source_relations/original/logs/sacq_param_sweep/sacq_latency_sweep.csv",
+  "reproduction/source_relations/original/logs/etth1_spike_outlier_pl720/summary.csv",
+  "reproduction/source_relations/original/logs/etth1_spike_outlier_pl720/figures/alpha_variants_cache.npz",
+  "reproduction/source_relations/original/logs/etth1_spike_outlier_pl720/figures/alpha_horizon_v2_clean_vs_spiked.png",
+  "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_sl512/experiment_meta.json",
+  "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_sl512/experiment_meta_test.json"
+]

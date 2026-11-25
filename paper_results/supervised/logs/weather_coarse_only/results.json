@@ -1,0 +1,62 @@
+[
+  {
+    "mse": 0.18680989742279053,
+    "mae": 0.24076375365257263,
+    "rse": 0.5693901777267456,
+    "rmse": 0.4322150945663452,
+    "corr": 0.426878422498703,
+    "pred_len": 96,
+    "model_id": "Ws512p96SARslc",
+    "setting": "Ws512p96SARslc_PatchTST_weather_sl512_pl96_wSARslc_0",
+    "checkpoint": "pths&logs/pths/Weather/Ws512p96SARslc_checkpoint.pth",
+    "full_sar_mse": 0.14688237011432648,
+    "full_sar_mae": 0.18519560992717743,
+    "mse_delta_pct": 27.18333539783318,
+    "mae_delta_pct": 30.00510851593388
+  },
+  {
+    "mse": 0.22296786308288574,
+    "mae": 0.27030810713768005,
+    "rse": 0.621207594871521,
+    "rmse": 0.47219473123550415,
+    "corr": 0.41525697708129883,
+    "pred_len": 192,
+    "model_id": "Ws512p192SARslc",
+    "setting": "Ws512p192SARslc_PatchTST_weather_sl512_pl192_wSARslc_0",
+    "checkpoint": "pths&logs/pths/Weather/Ws512p192SARslc_checkpoint.pth",
+    "full_sar_mse": 0.1929798126220703,
+    "full_sar_mae": 0.22968430817127228,
+    "mse_delta_pct": 15.539475374838155,
+    "mae_delta_pct": 17.686797713718953
+  },
+  {
+    "mse": 0.3058547377586365,
+    "mae": 0.3345434069633484,
+    "rse": 0.726473331451416,
+    "rmse": 0.5530413389205933,
+    "corr": 0.37903711199760437,
+    "pred_len": 336,
+    "model_id": "Ws512p336SARslc",
+    "setting": "Ws512p336SARslc_PatchTST_weather_sl512_pl336_wSARslc_0",
+    "checkpoint": "pths&logs/pths/Weather/Ws512p336SARslc_checkpoint.pth",
+    "full_sar_mse": 0.24307453632354736,
+    "full_sar_mae": 0.2708144783973694,
+    "mse_delta_pct": 25.82755165745734,
+    "mae_delta_pct": 23.532319594991804
+  },
+  {
+    "mse": 0.31754550337791443,
+    "mae": 0.3353455662727356,
+    "rse": 0.7433980107307434,
+    "rmse": 0.5635117888450623,
+    "corr": 0.3470452129840851,
+    "pred_len": 720,
+    "model_id": "Ws512p720SAR_L1k4",
+    "setting": "Ws512p720SAR_L1k4_PatchTST_weather_sl512_pl720_hSAR_L1k4_0",
+    "checkpoint": "pths&logs/pths/Weather/Ws512p720SAR_L1k4_checkpoint.pth",
+    "full_sar_mse": 0.3103117346763611,
+    "full_sar_mae": 0.3259959816932678,
+    "mse_delta_pct": 2.3311296007216056,
+    "mae_delta_pct": 2.868006081211415
+  }
+]

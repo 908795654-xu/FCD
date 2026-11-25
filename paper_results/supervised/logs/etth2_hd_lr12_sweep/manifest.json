@@ -1,0 +1,121 @@
+{
+  "hds": [
+    0.25,
+    0.275,
+    0.3
+  ],
+  "lrs": [
+    8e-05,
+    7e-05,
+    6e-05,
+    5e-05
+  ],
+  "jobs": [
+    {
+      "hd": 0.25,
+      "lr": 8e-05,
+      "model_id": "E2s512p720Hd0p25Lr8em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr8em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p25Lr8em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.25 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 8e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p25_lr8em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr8em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.25,
+      "lr": 7e-05,
+      "model_id": "E2s512p720Hd0p25Lr7em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr7em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p25Lr7em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.25 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 7e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p25_lr7em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr7em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.25,
+      "lr": 6e-05,
+      "model_id": "E2s512p720Hd0p25Lr6em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr6em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p25Lr6em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.25 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 6e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p25_lr6em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr6em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.25,
+      "lr": 5e-05,
+      "model_id": "E2s512p720Hd0p25Lr5em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr5em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p25Lr5em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.25 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 5e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p25_lr5em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr5em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.275,
+      "lr": 8e-05,
+      "model_id": "E2s512p720Hd0p275Lr8em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr8em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p275Lr8em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.275 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 8e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p275_lr8em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr8em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.275,
+      "lr": 7e-05,
+      "model_id": "E2s512p720Hd0p275Lr7em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr7em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p275Lr7em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.275 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 7e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p275_lr7em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr7em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.275,
+      "lr": 6e-05,
+      "model_id": "E2s512p720Hd0p275Lr6em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr6em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p275Lr6em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.275 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 6e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p275_lr6em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr6em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.275,
+      "lr": 5e-05,
+      "model_id": "E2s512p720Hd0p275Lr5em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr5em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p275Lr5em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.275 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 5e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p275_lr5em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr5em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.3,
+      "lr": 8e-05,
+      "model_id": "E2s512p720Hd0p3Lr8em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p3Lr8em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p3Lr8em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.3 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 8e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p3_lr8em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p3Lr8em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.3,
+      "lr": 7e-05,
+      "model_id": "E2s512p720Hd0p3Lr7em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p3Lr7em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p3Lr7em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.3 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 7e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p3_lr7em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p3Lr7em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.3,
+      "lr": 6e-05,
+      "model_id": "E2s512p720Hd0p3Lr6em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p3Lr6em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p3Lr6em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.3 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 6e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p3_lr6em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p3Lr6em5.log\" 2>&1"
+    },
+    {
+      "hd": 0.3,
+      "lr": 5e-05,
+      "model_id": "E2s512p720Hd0p3Lr5em5",
+      "log": "/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p3Lr5em5.log",
+      "cmd": "/home/bkai/miniconda3/envs/forecast/bin/python -u run_longExp.py --is_training 1 --random_seed 2021 --root_path ./dataset/ --data_path ETTh2.csv --model_id E2s512p720Hd0p3Lr5em5 --model PatchTST --data ETTh2 --features M --freq h --seq_len 512 --pred_len 720 --enc_in 7 --dec_in 7 --c_out 7 --e_layers 3 --n_heads 4 --d_model 16 --d_ff 128 --dropout 0.3 --fc_dropout 0.3 --head_dropout 0.3 --patch_len 16 --stride 8 --cross_attn_layers 2 --train_epochs 50 --patience 20 --batch_size 128 --learning_rate 5e-05 --lradj TST --pct_start 0.2 --itr 1 --num_workers 4 --head_type sacq_cross_attention --sacq_autoregressive 1 --sacq_alpha_mode learnable --short_setting 1 --des hSAR_hd0p3_lr5em5 --skip_visual 1 --dsacq_enable 0 --dsacq_mem_gate_enable 0 --dsacq_drift_gate_enable 0 --loss logcosh_scaled --logcosh_beta 1.0 --logcosh_beta_mode auto_mad > \"/home/bkai/CG2/SACQ/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p3Lr5em5.log\" 2>&1"
+    }
+  ],
+  "buckets": {
+    "0": [
+      "E2s512p720Hd0p25Lr8em5",
+      "E2s512p720Hd0p275Lr8em5",
+      "E2s512p720Hd0p3Lr8em5"
+    ],
+    "1": [
+      "E2s512p720Hd0p25Lr7em5",
+      "E2s512p720Hd0p275Lr7em5",
+      "E2s512p720Hd0p3Lr7em5"
+    ],
+    "2": [
+      "E2s512p720Hd0p25Lr6em5",
+      "E2s512p720Hd0p275Lr6em5",
+      "E2s512p720Hd0p3Lr6em5"
+    ],
+    "3": [
+      "E2s512p720Hd0p25Lr5em5",
+      "E2s512p720Hd0p275Lr5em5",
+      "E2s512p720Hd0p3Lr5em5"
+    ]
+  }
+}

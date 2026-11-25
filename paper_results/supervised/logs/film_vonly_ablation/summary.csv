@@ -1,0 +1,17 @@
+dataset,pred_len,variant,sacq_mem_film_enable,mse,mae,log_path
+ETTh1,720,film0,0,0.42860984802246094,0.45432278513908386,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/h1s512p720SARlcfilm0v2.log
+ETTh1,720,film1,1,0.4289366602897644,0.4536011219024658,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/h1s512p720SARlcfilm1v2.log
+ETTh2,720,film0,0,0.3844214677810669,0.42241841554641724,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/h2s512p720SARlcfilm0v2.log
+ETTh2,720,film1,1,0.38419657945632935,0.4219535291194916,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/h2s512p720SARlcfilm1v2.log
+ETTm1,720,film0,0,0.42088237404823303,0.41393542289733887,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/m1s512p720SARlcfilm0v2.log
+ETTm1,720,film1,1,0.4177476167678833,0.4122749865055084,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/m1s512p720SARlcfilm1v2.log
+ETTm2,720,film0,0,0.35984745621681213,0.3808147609233856,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/m2s512p720SARlcfilm0v2.log
+ETTm2,720,film1,1,0.3580460250377655,0.37973126769065857,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/m2s512p720SARlcfilm1v2.log
+ETTh1,96,film0,0,0.362678587436676,0.3932568430900574,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/h1s512p96SARlcfilm0v2.log
+ETTh1,96,film1,1,0.3625636696815491,0.39286544919013977,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/h1s512p96SARlcfilm1v2.log
+ETTh2,96,film0,0,0.27307283878326416,0.3330850899219513,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/h2s512p96SARlcfilm0v2.log
+ETTh2,96,film1,1,0.2719044089317322,0.3320157527923584,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/h2s512p96SARlcfilm1v2.log
+ETTm1,96,film0,0,0.2890464961528778,0.33675146102905273,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/m1s512p96SARlcfilm0v2.log
+ETTm1,96,film1,1,0.2920657992362976,0.3384673595428467,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/m1s512p96SARlcfilm1v2.log
+ETTm2,96,film0,0,0.15978878736495972,0.24747276306152344,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/m2s512p96SARlcfilm0v2.log
+ETTm2,96,film1,1,0.15954066812992096,0.24721862375736237,/home/bkai/CG2/SACQ/logs/film_vonly_ablation/logs/m2s512p96SARlcfilm1v2.log

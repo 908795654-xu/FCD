@@ -1,0 +1,147 @@
+{
+  "complete": true,
+  "smoke": false,
+  "config": {
+    "dataset": "weather",
+    "backbone": "chronos",
+    "horizon": 720,
+    "variant": "mlp:base:tune",
+    "head": "mlp",
+    "candidate": "base",
+    "seed": 2026,
+    "batch_size": 128,
+    "max_epochs": 50,
+    "patience": 7,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "head_dropout": 0.0,
+    "context_length": 512,
+    "loss": "mse",
+    "optimizer": "AdamW",
+    "selection": "validation_mse",
+    "evaluate_test_after_selection": false,
+    "frozen_backbone": true
+  },
+  "fingerprint": "a440be6a722f355bcd91beb1575664ef095daf67bbd3eb7dfee81e353a966e8d",
+  "backbone": "chronos",
+  "horizon": 720,
+  "variant": "mlp:base:tune",
+  "seed": 2026,
+  "metadata": {
+    "backbone": "chronos",
+    "head": "mlp",
+    "context_length": 512,
+    "prediction_length": 720,
+    "n_vars": 21,
+    "hidden_dim": 384,
+    "patch_count": 32,
+    "trainable_parameters": 11982009,
+    "frozen_parameters": 21236096,
+    "future_query_pe": false,
+    "pe_learnable": false,
+    "pe_initializer": null,
+    "target_sacq_parameters": 11977453,
+    "mlp_hidden_width": 921,
+    "parameter_gap_pct": 0.03803813715653904
+  },
+  "core_init_sha256": "b755a4c16959ed2d489749798dbb5066dcd7b9d413b661b868909dc7318dcf49",
+  "post_build_cpu_rng_sha256": "056e22c5f76b2d04c2d31c29771e361ff34ad229ed8a414e15fb85ca73de78fc",
+  "initial_val": {
+    "mse": 0.7939719848593049,
+    "mae": 0.556788102295404
+  },
+  "best_val": {
+    "mse": 0.6119799270645653,
+    "mae": 0.4234392456787809
+  },
+  "best_epoch": 1,
+  "completed_epochs": 8,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.574806627108479,
+      "val_mse": 0.6119799270645653,
+      "val_mae": 0.4234392456787809,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 0.0001,
+      "seconds": 25.30794521700591
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.5376032359343818,
+      "val_mse": 0.6165909178735369,
+      "val_mae": 0.4262498680151499,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 0.0001,
+      "seconds": 25.23438331205398
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.5107722435694052,
+      "val_mse": 0.6237490495606732,
+      "val_mae": 0.4291681586299487,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 5e-05,
+      "seconds": 25.24185030767694
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.4867596358170213,
+      "val_mse": 0.6304586338754615,
+      "val_mae": 0.43419521627606594,
+      "learning_rate_used": 5e-05,
+      "learning_rate_next": 5e-05,
+      "seconds": 25.189897872973233
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.4719906532673693,
+      "val_mse": 0.6383820879438266,
+      "val_mae": 0.4373440015123966,
+      "learning_rate_used": 5e-05,
+      "learning_rate_next": 2.5e-05,
+      "seconds": 25.243894010782242
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.4598275080424197,
+      "val_mse": 0.6408803500175004,
+      "val_mae": 0.438433361662588,
+      "learning_rate_used": 2.5e-05,
+      "learning_rate_next": 2.5e-05,
+      "seconds": 25.247813635040075
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.4528108567777291,
+      "val_mse": 0.6483261912970805,
+      "val_mae": 0.4422656930310522,
+      "learning_rate_used": 2.5e-05,
+      "learning_rate_next": 1.25e-05,
+      "seconds": 25.2115224651061
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.44690675858071344,
+      "val_mse": 0.6487662959140623,
+      "val_mae": 0.4419215933772163,
+      "learning_rate_used": 1.25e-05,
+      "learning_rate_next": 1.25e-05,
+      "seconds": 25.20478419912979
+    }
+  ],
+  "dataset_lengths": {
+    "train": 35656,
+    "val": 4550
+  },
+  "head_gradient_checked": true,
+  "backbone_unchanged": true,
+  "test_evaluated": false,
+  "test": null,
+  "checkpoint": "/home/bkai/CG2/SACQ_TSFM/checkpoints/weather_head_tuning_v1/weather_p720_chronos_mlp_base_tune_seed2026.pt",
+  "elapsed_seconds": 202.03790331212804,
+  "peak_allocated_mb": 2008.6767578125,
+  "physical_gpu": "3",
+  "torch_version": "2.10.0+cu128",
+  "transformers_version": "4.53.3"
+}

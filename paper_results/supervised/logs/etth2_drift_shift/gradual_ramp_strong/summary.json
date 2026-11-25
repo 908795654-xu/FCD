@@ -1,0 +1,56 @@
+{
+  "preset": "gradual_ramp_strong",
+  "shift_idx": 13936,
+  "n_total": 17420,
+  "data_path": "ETTh2_shift_gradual_ramp_strong.csv",
+  "info": {
+    "dataset": "ETTh2",
+    "preset": "gradual_ramp_strong",
+    "shift_type": "gradual_ramp",
+    "shift_idx": 13936,
+    "n_total": 17420,
+    "shock_steps": 300,
+    "recovery_steps": 200,
+    "dst_csv": "/home/bkai/CG2/SACQ/dataset/ETTh2_shift_gradual_ramp_strong.csv",
+    "params": {
+      "shift_type": "gradual_ramp",
+      "shift_ratio": 0.8,
+      "level_mult_end": 1.65,
+      "slope_end": -0.28,
+      "old_slope": 0.1
+    }
+  },
+  "models": [
+    {
+      "tag": "Flatten",
+      "mse": 0.6885305643081665,
+      "mae": 0.6510904431343079,
+      "slope_post": 1.3375130657447993
+    },
+    {
+      "tag": "S1",
+      "mse": 0.671707272529602,
+      "mae": 0.6379046440124512,
+      "slope_post": 1.3366326953849395
+    },
+    {
+      "tag": "S2",
+      "mse": 0.6761201024055481,
+      "mae": 0.6435620188713074,
+      "slope_post": 1.3491250232589949
+    },
+    {
+      "tag": "S12",
+      "mse": 0.6680073738098145,
+      "mae": 0.6385481357574463,
+      "slope_post": 1.349755676941704
+    }
+  ],
+  "plots": {
+    "main": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp_strong/drift_main_panel.png",
+    "time": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp_strong/drift_mse_vs_time.png",
+    "intensity": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp_strong/drift_mse_vs_intensity.png",
+    "relative": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp_strong/drift_mse_relative_post.png",
+    "slope_bar": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp_strong/drift_degradation_slope.png"
+  }
+}

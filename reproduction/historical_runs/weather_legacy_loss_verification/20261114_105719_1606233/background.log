@@ -1,0 +1,4 @@
+START logcosh_scaled GPU 2 LOG /home/bkai/CG2/weather_legacy_loss_verification/20261114_105719_1606233/logcosh_scaled/train.log
+DONE logcosh_scaled {'mse': 0.3103117346763611, 'mae': 0.3259959816932678}
+WEATHER_LEGACY_LOSS_REPRODUCTION_FINISHED
+RESULTS /home/bkai/CG2/weather_legacy_loss_verification/20261114_105719_1606233/comparison.json

@@ -1,0 +1,272 @@
+[
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_gate_rerun/baseline_sarlc_rerun2.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_gate_rerun\\baseline_sarlc_rerun2.log",
+    "sha256": "a230d5bca0715dd6e747e2a2b36f7615d9fc431f3dfd0fa071ef30aa186fb098"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/logs/H1s512p720SACQslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\logs\\H1s512p720SACQslc.log",
+    "sha256": "088fc9dcf3a869b244749c1bfe5bddf7cdc8c4fd8dd68657d3c75fd0c5991b08"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/logs/H1s512p720SARslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\logs\\H1s512p720SARslc.log",
+    "sha256": "c5ed00b36ba433add22670c6c12c70c29204f2cb100ff8b1ff45da5634473bdf"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_sar_sl512_logcosh_scaled_alpha_curve/logs/H1s512p720SARslc_eval.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_sar_sl512_logcosh_scaled_alpha_curve\\logs\\H1s512p720SARslc_eval.log",
+    "sha256": "ca161a934fc375bb6640589f88e3b71fdadffcb2e61c3239e8bb168c059d3403"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_spike_bilateral_pl720/logs/H1s512p720SACQslc_clean.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_spike_bilateral_pl720\\logs\\H1s512p720SACQslc_clean.log",
+    "sha256": "2c98eba829600100cc24fa6008b7e04eecc86f2b0fd5b8dfc6c30b7a226c6758"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_spike_bilateral_pl720/logs/H1s512p720SARslc_clean.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_spike_bilateral_pl720\\logs\\H1s512p720SARslc_clean.log",
+    "sha256": "79c9f24bfcf9605653bbad3d6a3012b372ea681437927f2406aa60073bdf77d2"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/sacq_Lk_sensitivity/logs/H1s512p720SAR_L2k1.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\sacq_Lk_sensitivity\\logs\\H1s512p720SAR_L2k1.log",
+    "sha256": "bf1622fed13896f686f155aa0ca95e6845f2003b7721c9d16adaed43add3dc7f"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTh2/E2s512p96Hd0p2Lr5em5.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTh2\\E2s512p96Hd0p2Lr5em5.log",
+    "sha256": "daf7c24ad4fa6e768a23787cb4964cd9f9f9cee250dbe6ac9a0348d8491b9927"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTh2/E2s512p192Hd0p275Lr5em5.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTh2\\E2s512p192Hd0p275Lr5em5.log",
+    "sha256": "84ed00689e8388c70e047e61ff7d6ba5e55dc0fc1c6b7bf9de4d9f72d53c1d18"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTh2/E2s512p336Hd0p275Lr5em5.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTh2\\E2s512p336Hd0p275Lr5em5.log",
+    "sha256": "c264188b34272466972ed3b78c4a97cc405ba90647cce9cf30d97fd6a17013e5"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p25Lr5em5.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth2_hd_lr12_sweep\\logs\\E2s512p720Hd0p25Lr5em5.log",
+    "sha256": "712f48cbc562aa330130e93a2375182d031aa02200bc9f6b84950a496e17b701"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth2_hd_lr12_sweep/logs/E2s512p720Hd0p275Lr5em5.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth2_hd_lr12_sweep\\logs\\E2s512p720Hd0p275Lr5em5.log",
+    "sha256": "a3d586cc4b63ea081b3e6d1171e8bf02c44ddb90363eec0b92e14ccc0b7139fb"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTh2/E2s512p720Hd0p3Lr6em5.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTh2\\E2s512p720Hd0p3Lr6em5.log",
+    "sha256": "2d567e33c1fb2bb1aef1ab8e763156a9592da8cac0c77e16df22cddf0e2bf3fa"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth2_hd_lr12_sweep/logs/M1s512p96Hd0p1Lr5em5_ep25_rerun.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth2_hd_lr12_sweep\\logs\\M1s512p96Hd0p1Lr5em5_ep25_rerun.log",
+    "sha256": "f345d1b14cbcbdb8c5ca83886b641a5fca82c382053037acd681f48d69eed9ab"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTm1/M1s512p96Hd0p1Lr5em5.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTm1\\M1s512p96Hd0p1Lr5em5.log",
+    "sha256": "3928e05c05bc4ac18f32213e1c37a5ffacf296532a6a97abf78c58b40c57341c"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTm1/s2_pl336_lr001.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTm1\\s2_pl336_lr001.log",
+    "sha256": "507ff4e1d72f919fae08fdd54f63d80409c2589701d4acc235775a5d117d7ecc"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTm1/s2_pl720_lr1.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTm1\\s2_pl720_lr1.log",
+    "sha256": "1a5b954928d8e80ded85beaa506a0e97b570705c2607f63dc3e183b7133d3495"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTm2/M2s512p96SARslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTm2\\M2s512p96SARslc.log",
+    "sha256": "73122f73a3691c42e8f9b7192a9ea78868ad4e6deb3bf5d38ab3c60018fe7870"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTm2/M2s512p192SARslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTm2\\M2s512p192SARslc.log",
+    "sha256": "ec9762b6f404b96dde82a62c2a4ce18c970a961b0de37466faaf5ecb3ba4ed6f"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTm2/M2s512p336SARslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTm2\\M2s512p336SARslc.log",
+    "sha256": "7bee85955d6bf1b59ac0372b649ce1f5f387bf2f8cd2ab05acb568234b9faf89"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/ETTm2/M2s512p720SARslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\ETTm2\\M2s512p720SARslc.log",
+    "sha256": "e01f9ffeeb63a704c4244930bbf504d26d83b79ac8eae69f3f1860c5ffd1a430"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/Weather/Ws512p336SARslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\Weather\\Ws512p336SARslc.log",
+    "sha256": "ffb3e09e4a3c144b659a34cb0b730f0bf9d87a4cb2f9842b4c7f75db40955429"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/Weather/Ws512p720SAR_L1k4.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\Weather\\Ws512p720SAR_L1k4.log",
+    "sha256": "3568c90b72138e3362b13cd3a3073fbbc13ca552ea4414ad09c963065fe9c681"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/Electricity/Electricity_512_336_SARslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\Electricity\\Electricity_512_336_SARslc.log",
+    "sha256": "c94ffa99cd2738d1d033b614bb780618984b964d65112bc61ccbdc05e1da7bc1"
+  },
+  {
+    "path": "reproduction/source_relations/original/pths&logs/logs/Electricity/Electricity_512_720_SARslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\pths&logs\\logs\\Electricity\\Electricity_512_720_SARslc.log",
+    "sha256": "4328444643fcf47ed07a17adcb58327da127abb8e6ef59a8e4660fb9b80ba7a0"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/sacq_Lk_sensitivity/logs/H1s512p720SAR_L3k4.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\sacq_Lk_sensitivity\\logs\\H1s512p720SAR_L3k4.log",
+    "sha256": "40a86cc19dbe243298986e12df6c25ac207963953819919a6bf05fd0f1597324"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_adj_figures_mse.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\train_corruption_adj_figures_mse.csv",
+    "sha256": "39d639b13682f43f5d91dbc213e4898aaef58f3de7803fb0d346dc49fc306880"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_sl512_pl96/results_test_mask.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\train_corruption_sl512_pl96\\results_test_mask.csv",
+    "sha256": "3bc0d4334c218f79a17eba565ffeb35191f48332a75e208e4ade1988466afdfb"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_flatten_mse_sl512/logs/ETTh1_512_96.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_flatten_mse_sl512\\logs\\ETTh1_512_96.log",
+    "sha256": "dcfd3656f5fd23d5168f0715c20d30754f384e73e8b722af964e14ae0cef7bcb"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_pl96_flat_slc/logs/ETTh1_512_96Flatslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\train_pl96_flat_slc\\logs\\ETTh1_512_96Flatslc.log",
+    "sha256": "3d44ab4041fea4c2ad9cb4221b3d446667e730ae5e6514e689f9742e197c595d"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_sar_sl512/logs/H1s512p96SAR.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_sar_sl512\\logs\\H1s512p96SAR.log",
+    "sha256": "bc163ec99e4dab87046394975846102b0f72a35d81da9e9a8818fe110ef78c45"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_sl512_pl96/results_test_spike.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\train_corruption_sl512_pl96\\results_test_spike.csv",
+    "sha256": "940ba096c77f2b33f39aa5bcb44d8e39cb6df8f93235db6395c6c84c5104bbbc"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_sl512/results_test_mask.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\train_corruption_sl512\\results_test_mask.csv",
+    "sha256": "0f1f020ebf0240581b1742bd97e40e18d144dc30f10b0a960e89e84f0a351592"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_flatten_mse_sl512/logs/ETTh1_512_720.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_flatten_mse_sl512\\logs\\ETTh1_512_720.log",
+    "sha256": "bb194cc04000b4beb7046762663b6aa8c24ad6df985db57d2391cd75ae26c9a1"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/logs/ETTh1_512_720.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\logs\\ETTh1_512_720.log",
+    "sha256": "bb194cc04000b4beb7046762663b6aa8c24ad6df985db57d2391cd75ae26c9a1"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/logs/ETTh1_512_720Flatslc.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\logs\\ETTh1_512_720Flatslc.log",
+    "sha256": "49af6c6fb09ecdbff65ce5bcc9ea2c2b9bb58642ba67c945235d089f93090fef"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/logs/H1s512p720SAR.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\logs\\H1s512p720SAR.log",
+    "sha256": "fa3045824de3899eb0b93ac56be353fec21db2a144812da210766316cb7d8ecd"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_sar_sl512/logs/H1s512p720SAR.log",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_sar_sl512\\logs\\H1s512p720SAR.log",
+    "sha256": "cf5c2ca9f9ca87ea7c6be391cd11e6d409c02648ec1db0687020ef9ba4d920c6"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_sl512/results_test_spike.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\train_corruption_sl512\\results_test_spike.csv",
+    "sha256": "c1641184b219ae7034ee18cbaf8ed8aa1a339fd1702b2178fcecc8440cd5c628"
+  },
+  {
+    "path": "reproduction/source_relations/figure_inputs/Figs/new/corrpdata.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\KBS\\IEEE_source\\Figs\\new\\corrpdata.csv",
+    "sha256": "39d639b13682f43f5d91dbc213e4898aaef58f3de7803fb0d346dc49fc306880"
+  },
+  {
+    "path": "reproduction/source_relations/figure_inputs/plot_etth1_corruption_2x2.py",
+    "original_path": "D:\\桌面\\Xuzhengchao\\KBS\\IEEE_source\\plot_etth1_corruption_2x2.py",
+    "sha256": "813172eea82028af533c9acf6accba77d20f88634d540098645eb931549a76bd"
+  },
+  {
+    "path": "reproduction/source_relations/figure_inputs/Figs/new/96mask.png",
+    "original_path": "D:\\桌面\\Xuzhengchao\\KBS\\IEEE_source\\Figs\\new\\96mask.png",
+    "sha256": "3a063e019609cce31ee9ba04a9242deb327d8a0d3fc8e467be5c54d11099e506"
+  },
+  {
+    "path": "reproduction/source_relations/figure_inputs/Figs/new/96spike.png",
+    "original_path": "D:\\桌面\\Xuzhengchao\\KBS\\IEEE_source\\Figs\\new\\96spike.png",
+    "sha256": "b4710b46d722605606798d53c652787f5cac3a2500893398632c2f2151808510"
+  },
+  {
+    "path": "reproduction/source_relations/figure_inputs/Figs/new/720mask.png",
+    "original_path": "D:\\桌面\\Xuzhengchao\\KBS\\IEEE_source\\Figs\\new\\720mask.png",
+    "sha256": "c826a152a195d7c84b1e1086b514aa664e5cce2aa9aacc2ed746186b08d5d34a"
+  },
+  {
+    "path": "reproduction/source_relations/figure_inputs/Figs/new/720spike.png",
+    "original_path": "D:\\桌面\\Xuzhengchao\\KBS\\IEEE_source\\Figs\\new\\720spike.png",
+    "sha256": "a7d7d636bab4d38be5620eee2c6eeb19fc5a33792f54ab1b855f547cc23561e4"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_sar_vs_sacq_search/spike_train_tail_shift.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_sar_vs_sacq_search\\spike_train_tail_shift.csv",
+    "sha256": "321922b7c19a745abec1fa11391807e7b6284c0a355136bb824e1e6cb0a79c12"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/weather_sar_vs_sacq_search/spike_train_tail_shift.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\weather_sar_vs_sacq_search\\spike_train_tail_shift.csv",
+    "sha256": "24d19f6641e1d5b7ff5436bbf7d946e694ba7f560f7effdfa38eb5fbd7e2bc0b"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/sacq_param_sweep/sacq_param_sweep.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\sacq_param_sweep\\sacq_param_sweep.csv",
+    "sha256": "6d3d172e6f5716bf22a039cbc690781ba1285cbcfd83135fd665d367320ca41f"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/sacq_param_sweep/sacq_latency_sweep.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\sacq_param_sweep\\sacq_latency_sweep.csv",
+    "sha256": "4f852f6e6a95cd00c12fd27b0767cafe2790ee21c66da4080cd4bd091002cb99"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_spike_outlier_pl720/summary.csv",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_spike_outlier_pl720\\summary.csv",
+    "sha256": "713dd0bfc679f437639fc12371281df036d9a7057303dbc6bc5adc2621dc070d"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_spike_outlier_pl720/figures/alpha_variants_cache.npz",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_spike_outlier_pl720\\figures\\alpha_variants_cache.npz",
+    "sha256": "f9cc208c5eb4af8b83b9da9a82472062f90f7eca1b9613c31cb382a3d3777ae4"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_spike_outlier_pl720/figures/alpha_horizon_v2_clean_vs_spiked.png",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_spike_outlier_pl720\\figures\\alpha_horizon_v2_clean_vs_spiked.png",
+    "sha256": "e9d3d46134b5f53d935549f3d55e7f43eb010fa22eead1b2ef139d2a3d0e3a1b"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_sl512/experiment_meta.json",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\train_corruption_sl512\\experiment_meta.json",
+    "sha256": "114dfe910a918132f4523816b990192a45bd2f265e0c4379a91ad4f073994003"
+  },
+  {
+    "path": "reproduction/source_relations/original/logs/etth1_pl720_seqlen_sweep/train_corruption_sl512/experiment_meta_test.json",
+    "original_path": "D:\\桌面\\Xuzhengchao\\SACQ\\logs\\etth1_pl720_seqlen_sweep\\train_corruption_sl512\\experiment_meta_test.json",
+    "sha256": "d4416eacb7ded29f84f904912d0446763c660ddbc5148eef43fab086d45f9cef"
+  }
+]

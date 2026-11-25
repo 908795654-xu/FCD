@@ -1,0 +1,147 @@
+{
+  "complete": true,
+  "smoke": false,
+  "config": {
+    "dataset": "weather",
+    "backbone": "chronos",
+    "horizon": 720,
+    "variant": "mlp:lr_high:tune",
+    "head": "mlp",
+    "candidate": "lr_high",
+    "seed": 2026,
+    "batch_size": 128,
+    "max_epochs": 50,
+    "patience": 7,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "head_dropout": 0.0,
+    "context_length": 512,
+    "loss": "mse",
+    "optimizer": "AdamW",
+    "selection": "validation_mse",
+    "evaluate_test_after_selection": false,
+    "frozen_backbone": true
+  },
+  "fingerprint": "a440be6a722f355bcd91beb1575664ef095daf67bbd3eb7dfee81e353a966e8d",
+  "backbone": "chronos",
+  "horizon": 720,
+  "variant": "mlp:lr_high:tune",
+  "seed": 2026,
+  "metadata": {
+    "backbone": "chronos",
+    "head": "mlp",
+    "context_length": 512,
+    "prediction_length": 720,
+    "n_vars": 21,
+    "hidden_dim": 384,
+    "patch_count": 32,
+    "trainable_parameters": 11982009,
+    "frozen_parameters": 21236096,
+    "future_query_pe": false,
+    "pe_learnable": false,
+    "pe_initializer": null,
+    "target_sacq_parameters": 11977453,
+    "mlp_hidden_width": 921,
+    "parameter_gap_pct": 0.03803813715653904
+  },
+  "core_init_sha256": "b755a4c16959ed2d489749798dbb5066dcd7b9d413b661b868909dc7318dcf49",
+  "post_build_cpu_rng_sha256": "056e22c5f76b2d04c2d31c29771e361ff34ad229ed8a414e15fb85ca73de78fc",
+  "initial_val": {
+    "mse": 0.7939719848593049,
+    "mae": 0.556788102295404
+  },
+  "best_val": {
+    "mse": 0.6278485507035662,
+    "mae": 0.43331722889505236
+  },
+  "best_epoch": 1,
+  "completed_epochs": 8,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.5513552217321541,
+      "val_mse": 0.6278485507035662,
+      "val_mae": 0.43331722889505236,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 25.304577140137553
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.4662893451273311,
+      "val_mse": 0.6640313047663976,
+      "val_mae": 0.4484400519988139,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 25.248318099882454
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.4009202242650116,
+      "val_mse": 0.691248607435035,
+      "val_mae": 0.46308009290517,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.00015,
+      "seconds": 25.20373936323449
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.36217072594797617,
+      "val_mse": 0.7105768606316913,
+      "val_mae": 0.47064646535079463,
+      "learning_rate_used": 0.00015,
+      "learning_rate_next": 0.00015,
+      "seconds": 25.2516473880969
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.34559871790264307,
+      "val_mse": 0.7226938181023912,
+      "val_mae": 0.47482028742316207,
+      "learning_rate_used": 0.00015,
+      "learning_rate_next": 7.5e-05,
+      "seconds": 25.24562116805464
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.33239839324387627,
+      "val_mse": 0.7295995952135232,
+      "val_mae": 0.47849041296690803,
+      "learning_rate_used": 7.5e-05,
+      "learning_rate_next": 7.5e-05,
+      "seconds": 25.32522149803117
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.32602265360902805,
+      "val_mse": 0.7361396835009127,
+      "val_mae": 0.4818357010282408,
+      "learning_rate_used": 7.5e-05,
+      "learning_rate_next": 3.75e-05,
+      "seconds": 25.316467131022364
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.3202571592417989,
+      "val_mse": 0.7350381441035726,
+      "val_mae": 0.48163590313882465,
+      "learning_rate_used": 3.75e-05,
+      "learning_rate_next": 3.75e-05,
+      "seconds": 25.36886812420562
+    }
+  ],
+  "dataset_lengths": {
+    "train": 35656,
+    "val": 4550
+  },
+  "head_gradient_checked": true,
+  "backbone_unchanged": true,
+  "test_evaluated": false,
+  "test": null,
+  "checkpoint": "/home/bkai/CG2/SACQ_TSFM/checkpoints/weather_head_tuning_v1/weather_p720_chronos_mlp_lr_high_tune_seed2026.pt",
+  "elapsed_seconds": 202.41946840006858,
+  "peak_allocated_mb": 2008.6767578125,
+  "physical_gpu": "3",
+  "torch_version": "2.10.0+cu128",
+  "transformers_version": "4.53.3"
+}

@@ -1,0 +1,324 @@
+"""ETTh1 pred_len=720: run all 4 head×loss configs for given seq_len(s)."""
+from __future__ import annotations
+
+import argparse
+import csv
+import json
+import os
+import subprocess
+import sys
+import threading
+import time
+from queue import Empty, Queue
+
+DATA = "ETTh1"
+DATA_PATH = "ETTh1.csv"
+ENC_IN = 7
+FREQ = "h"
+DTAG = "H1"
+
+
+def ensure_dir(path: str) -> None:
+    os.makedirs(path, exist_ok=True)
+
+
+def build_tasks(seq_lens: list[int], pred_len: int, variants: list[str] | None = None) -> list[dict]:
+    tasks = []
+    for seq_len in seq_lens:
+        flat_id = f"ETTh1_{seq_len}_{pred_len}"
+        tasks.append(
+            {
+                "task_id": flat_id,
+                "model_id": flat_id,
+                "seq_len": seq_len,
+                "pred_len": pred_len,
+                "head_type": "flatten",
+                "loss": "mse",
+                "variant": "flatten_mse",
+                "des": "Exp",
+                "setting": f"{flat_id}_PatchTST_{DATA}_sl{seq_len}_pl{pred_len}_Exp_0",
+            }
+        )
+        tasks.append(
+            {
+                "task_id": f"{flat_id}Flatslc",
+                "model_id": flat_id,
+                "seq_len": seq_len,
+                "pred_len": pred_len,
+                "head_type": "flatten",
+                "loss": "logcosh_scaled",
+                "variant": "flatten_logcosh_scaled",
+                "des": "hFlatslc",
+                "setting": f"{flat_id}_PatchTST_{DATA}_sl{seq_len}_pl{pred_len}_hFlatslc_0",
+            }
+        )
+        sar_slc_id = f"{DTAG}s{seq_len}p{pred_len}SARslc"
+        tasks.append(
+            {
+                "task_id": sar_slc_id,
+                "model_id": sar_slc_id,
+                "seq_len": seq_len,
+                "pred_len": pred_len,
+                "head_type": "sacq_cross_attention",
+                "loss": "logcosh_scaled",
+                "variant": "sar_logcosh_scaled",
+                "des": "hSARslc",
+                "sacq_autoregressive": 1,
+                "setting": f"{sar_slc_id}_PatchTST_{DATA}_sl{seq_len}_pl{pred_len}_hSARslc_0",
+            }
+        )
+        sar_id = f"{DTAG}s{seq_len}p{pred_len}SAR"
+        tasks.append(
+            {
+                "task_id": sar_id,
+                "model_id": sar_id,
+                "seq_len": seq_len,
+                "pred_len": pred_len,
+                "head_type": "sacq_cross_attention",
+                "loss": "mse",
+                "variant": "sar_mse",
+                "des": "hSAR",
+                "sacq_autoregressive": 1,
+                "setting": f"{sar_id}_PatchTST_{DATA}_sl{seq_len}_pl{pred_len}_hSAR_0",
+            }
+        )
+    if variants:
+        vset = {v.strip() for v in variants}
+        tasks = [t for t in tasks if t["variant"] in vset]
+    return tasks
+
+
+def write_csv_row(path: str, header: list, row: dict) -> None:
+    exists = os.path.exists(path)
+    with open(path, "a", newline="") as f:
+        writer = csv.DictWriter(f, fieldnames=header, extrasaction="ignore")
+        if not exists:
+            writer.writeheader()
+        writer.writerow(row)
+
+
+def metrics_exist(setting: str) -> bool:
+    return os.path.isfile(os.path.join("results", setting, "metrics.json"))
+
+
+def row_from_metrics(task: dict, gpu_id: int, log_path: str, elapsed: float = 0.0) -> dict:
+    metrics_path = os.path.join("results", task["setting"], "metrics.json")
+    row = {
+        "task_id": task["task_id"],
+        "status": "ok",
+        "return_code": 0,
+        "gpu": gpu_id,
+        "elapsed_sec": round(elapsed, 2),
+        "dataset": DATA,
+        "seq_len": task["seq_len"],
+        "pred_len": task["pred_len"],
+        "variant": task["variant"],
+        "head_type": task["head_type"],
+        "loss": task["loss"],
+        "setting": task["setting"],
+        "log_path": log_path,
+        "note": "skipped_existing",
+    }
+    if task.get("sacq_autoregressive"):
+        row["sacq_autoregressive"] = 1
+    with open(metrics_path) as f:
+        m = json.load(f)
+    for k in (
+        "mse", "mae", "rse", "rmse", "mape", "mspe", "corr",
+        "smape", "mase", "ql50", "pwmae",
+    ):
+        row[k] = m.get(k)
+    return row
+
+
+def run_one(task: dict, gpu_id: int, args, out_dir: str) -> dict:
+    log_path = os.path.join(out_dir, "logs", f"{task['task_id']}.log")
+    metrics_path = os.path.join("results", task["setting"], "metrics.json")
+    if getattr(args, "skip_existing", False) and metrics_exist(task["setting"]):
+        return row_from_metrics(task, gpu_id, log_path)
+    _forecast_py = "/home/bkai/miniconda3/envs/forecast/bin/python"
+    py = os.environ.get("PYTHON") or (
+        _forecast_py if os.path.isfile(_forecast_py) else sys.executable
+    )
+    cmd = [
+        py, "-u", "run_longExp.py",
+        "--is_training", "1",
+        "--random_seed", str(args.seed),
+        "--root_path", "./dataset/",
+        "--data_path", DATA_PATH,
+        "--model_id", task["model_id"],
+        "--model", "PatchTST",
+        "--data", DATA,
+        "--features", "M",
+        "--freq", FREQ,
+        "--seq_len", str(task["seq_len"]),
+        "--pred_len", str(task["pred_len"]),
+        "--enc_in", str(ENC_IN),
+        "--dec_in", str(ENC_IN),
+        "--c_out", str(ENC_IN),
+        "--e_layers", str(args.e_layers),
+        "--n_heads", str(args.n_heads),
+        "--d_model", str(args.d_model),
+        "--d_ff", str(args.d_ff),
+        "--dropout", str(args.dropout),
+        "--fc_dropout", str(args.fc_dropout),
+        "--head_dropout", "0",
+        "--patch_len", str(args.patch_len),
+        "--stride", str(args.stride),
+        "--train_epochs", str(args.epochs),
+        "--patience", str(args.patience),
+        "--batch_size", str(args.batch_size),
+        "--learning_rate", str(args.lr),
+        "--lradj", "TST",
+        "--pct_start", "0.2",
+        "--itr", "1",
+        "--num_workers", str(args.num_workers),
+        "--head_type", task["head_type"],
+        "--short_setting", "1",
+        "--des", task["des"],
+        "--skip_visual", "1",
+        "--loss", task["loss"],
+    ]
+    if task["loss"] == "logcosh_scaled":
+        cmd.extend([
+            "--logcosh_beta", str(args.logcosh_beta),
+            "--logcosh_beta_mode", args.logcosh_beta_mode,
+        ])
+    if task["head_type"] == "sacq_cross_attention":
+        cmd.extend([
+            "--cross_attn_layers", "2",
+            "--sacq_autoregressive", "1",
+            "--sacq_alpha_mode", "learnable",
+            "--dsacq_enable", "0",
+            "--dsacq_mem_gate_enable", "0",
+            "--dsacq_drift_gate_enable", "0",
+        ])
+
+    env = os.environ.copy()
+    env["CUDA_VISIBLE_DEVICES"] = str(gpu_id)
+    t0 = time.time()
+    with open(log_path, "w") as lf:
+        lf.write(f"task_id={task['task_id']}\nvariant={task['variant']}\n")
+        lf.write(f"gpu={gpu_id}\nsetting={task['setting']}\n")
+        lf.write("cmd=" + " ".join(cmd) + "\n\n")
+        lf.flush()
+        proc = subprocess.run(cmd, env=env, stdout=lf, stderr=subprocess.STDOUT, check=False)
+    elapsed = time.time() - t0
+
+    row = {
+        "task_id": task["task_id"],
+        "status": "ok" if proc.returncode == 0 else "fail",
+        "return_code": proc.returncode,
+        "gpu": gpu_id,
+        "elapsed_sec": round(elapsed, 2),
+        "dataset": DATA,
+        "seq_len": task["seq_len"],
+        "pred_len": task["pred_len"],
+        "variant": task["variant"],
+        "head_type": task["head_type"],
+        "loss": task["loss"],
+        "setting": task["setting"],
+        "log_path": log_path,
+    }
+    if task.get("sacq_autoregressive"):
+        row["sacq_autoregressive"] = 1
+    if proc.returncode == 0 and os.path.exists(metrics_path):
+        with open(metrics_path) as f:
+            m = json.load(f)
+        for k in (
+            "mse", "mae", "rse", "rmse", "mape", "mspe", "corr",
+            "smape", "mase", "ql50", "pwmae",
+        ):
+            row[k] = m.get(k)
+    return row
+
+
+def worker(gpu_id: int, q: Queue, args, out_dir: str, csv_path: str, header: list, lock: threading.Lock):
+    while True:
+        try:
+            task = q.get_nowait()
+        except Empty:
+            break
+        row = run_one(task, gpu_id, args, out_dir)
+        with lock:
+            write_csv_row(csv_path, header, row)
+            print(
+                f"[GPU {gpu_id}] {row['task_id']} -> {row['status']} "
+                f"mse={row.get('mse', 'n/a')} ({row['elapsed_sec']}s)",
+                flush=True,
+            )
+        q.task_done()
+
+
+def main():
+    parser = argparse.ArgumentParser(description="ETTh1: 4-way configs per seq_len")
+    parser.add_argument("--pred_len", type=int, default=720)
+    parser.add_argument("--seq_lens", type=str, default="1920", help="comma-separated")
+    parser.add_argument(
+        "--variants",
+        type=str,
+        default=None,
+        help="comma-separated variant names to run (e.g. flatten_logcosh_scaled)",
+    )
+    parser.add_argument("--gpus", type=str, default="0,1,2,3")
+    parser.add_argument("--out_dir", type=str, default="logs/etth1_pl720_seqlen_sweep")
+    parser.add_argument(
+        "--skip_existing",
+        action="store_true",
+        help="reuse results/*/metrics.json when present",
+    )
+    parser.add_argument("--epochs", type=int, default=50)
+    parser.add_argument("--patience", type=int, default=20)
+    parser.add_argument("--batch_size", type=int, default=128)
+    parser.add_argument("--num_workers", type=int, default=4)
+    parser.add_argument("--lr", type=float, default=1e-4)
+    parser.add_argument("--seed", type=int, default=2021)
+    parser.add_argument("--e_layers", type=int, default=3)
+    parser.add_argument("--n_heads", type=int, default=4)
+    parser.add_argument("--d_model", type=int, default=16)
+    parser.add_argument("--d_ff", type=int, default=128)
+    parser.add_argument("--dropout", type=float, default=0.3)
+    parser.add_argument("--fc_dropout", type=float, default=0.3)
+    parser.add_argument("--patch_len", type=int, default=16)
+    parser.add_argument("--stride", type=int, default=8)
+    parser.add_argument("--logcosh_beta", type=float, default=1.0)
+    parser.add_argument("--logcosh_beta_mode", type=str, default="auto_mad")
+    args = parser.parse_args()
+
+    seq_lens = [int(x.strip()) for x in args.seq_lens.split(",") if x.strip()]
+    out_dir = args.out_dir
+    ensure_dir(out_dir)
+    ensure_dir(os.path.join(out_dir, "logs"))
+
+    variants = None
+    if args.variants:
+        variants = [x.strip() for x in args.variants.split(",") if x.strip()]
+    tasks = build_tasks(seq_lens, args.pred_len, variants=variants)
+    q: Queue = Queue()
+    for t in tasks:
+        q.put(t)
+
+    csv_path = os.path.join(out_dir, "summary.csv")
+    header = [
+        "task_id", "status", "return_code", "gpu", "elapsed_sec",
+        "dataset", "seq_len", "pred_len", "variant", "head_type",
+        "sacq_autoregressive", "loss", "setting", "log_path",
+        "mse", "mae", "rse", "rmse", "mape", "mspe", "corr",
+        "smape", "mase", "ql50", "pwmae",
+    ]
+    print(f"tasks={len(tasks)} gpus={args.gpus} seq_lens={seq_lens}", flush=True)
+    lock = threading.Lock()
+    gpu_ids = [int(x.strip()) for x in args.gpus.split(",") if x.strip()]
+    threads = [
+        threading.Thread(target=worker, args=(gid, q, args, out_dir, csv_path, header, lock))
+        for gid in gpu_ids
+    ]
+    for th in threads:
+        th.start()
+    for th in threads:
+        th.join()
+    print("all tasks finished", flush=True)
+
+
+if __name__ == "__main__":
+    main()

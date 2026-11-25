@@ -1,0 +1,156 @@
+{
+  "complete": true,
+  "smoke": false,
+  "config": {
+    "dataset": "etth1",
+    "backbone": "ttm",
+    "horizon": 96,
+    "variant": "tune_lr6e-04_wd0.1_drop0",
+    "seed": 2026,
+    "batch_size": 32,
+    "max_epochs": 50,
+    "patience": 7,
+    "learning_rate": 0.0006,
+    "weight_decay": 0.1,
+    "head_dropout": 0.0,
+    "loss": "mse",
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau",
+    "scheduler_patience": 1,
+    "factor": 0.5,
+    "threshold": 0.0001,
+    "threshold_mode": "rel",
+    "min_lr": 1e-06,
+    "context_length": 512,
+    "num_workers": 0,
+    "selection": "validation_mse",
+    "evaluate_test_after_selection": false,
+    "frozen_backbone": true,
+    "architecture": "flatten_linear_gelu_dropout_linear_shared_channels",
+    "parameter_target": "actual_sacq_pe_on_trainable_count",
+    "width_selection": "nearest_integer"
+  },
+  "fingerprint": "d7f3def649145019d0aa5dbe22a0e81f3d1bf22b2874835fccb72f4f12f5b5bf",
+  "backbone": "ttm",
+  "horizon": 96,
+  "variant": "tune_lr6e-04_wd0.1_drop0",
+  "seed": 2026,
+  "metadata": {
+    "implementation_profile": "readme_sacq_default_pe_v2",
+    "future_query_pe": false,
+    "pe_initializer": null,
+    "pe_learnable": false,
+    "backbone": "ttm",
+    "head": "mlp",
+    "context_length": 512,
+    "prediction_length": 96,
+    "n_vars": 7,
+    "hidden_dim": 128,
+    "patch_count": 9,
+    "trainable_parameters": 482210,
+    "frozen_parameters": 855100,
+    "target_sacq_parameters": 481789,
+    "mlp_hidden_width": 386,
+    "parameter_gap_pct": 0.0873826509114986
+  },
+  "core_init_sha256": "565c2732870b38eea40390bf31d5c3109897a5c87b3971357feb7cce33d1edc7",
+  "post_build_cpu_rng_sha256": "43da542c91e23a5a3a98d59e3d1ec902dae4618b5c931fb2fc3e941c9ecfc438",
+  "initial_val": {
+    "mse": 1.3648001891527508,
+    "mae": 0.8455916013055439
+  },
+  "best_val": {
+    "mse": 0.648944364995051,
+    "mae": 0.5430495420528422
+  },
+  "best_epoch": 1,
+  "completed_epochs": 8,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.36176756641000324,
+      "val_mse": 0.648944364995051,
+      "val_mae": 0.5430495420528422,
+      "learning_rate_used": 0.0006,
+      "learning_rate_next": 0.0006,
+      "seconds": 2.174578526057303
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.3303528739513683,
+      "val_mse": 0.6593464207515449,
+      "val_mae": 0.5461328886786844,
+      "learning_rate_used": 0.0006,
+      "learning_rate_next": 0.0006,
+      "seconds": 2.1146618239581585
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.3219502099682625,
+      "val_mse": 0.6594990734686018,
+      "val_mae": 0.5484504179657759,
+      "learning_rate_used": 0.0006,
+      "learning_rate_next": 0.0003,
+      "seconds": 2.083840372040868
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.3143253805837975,
+      "val_mse": 0.6612589402445386,
+      "val_mae": 0.5508026200282029,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 2.081433185376227
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.3103966671559765,
+      "val_mse": 0.6691880991986923,
+      "val_mae": 0.5530552635606094,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.00015,
+      "seconds": 2.0784844658337533
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.3063633025688261,
+      "val_mse": 0.6694469292878982,
+      "val_mae": 0.5555212108342443,
+      "learning_rate_used": 0.00015,
+      "learning_rate_next": 0.00015,
+      "seconds": 2.076915695797652
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.30432934346768836,
+      "val_mse": 0.6733271619686666,
+      "val_mae": 0.5531331467084076,
+      "learning_rate_used": 0.00015,
+      "learning_rate_next": 7.5e-05,
+      "seconds": 2.0682664839550853
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.3021556198578514,
+      "val_mse": 0.6733738922347018,
+      "val_mae": 0.5534987660431646,
+      "learning_rate_used": 7.5e-05,
+      "learning_rate_next": 7.5e-05,
+      "seconds": 2.0796043570153415
+    }
+  ],
+  "dataset_lengths": {
+    "train": 8033,
+    "val": 2785
+  },
+  "pe_gradient_checked": false,
+  "backbone_unchanged": true,
+  "test_evaluated": false,
+  "test": null,
+  "checkpoint": "/home/bkai/CG2/SACQ_TSFM_v2/checkpoints/mlp_control_v1/etth1_p96_ttm_mlp_tune_lr6e-04_wd0.1_drop0_seed2026.pt",
+  "elapsed_seconds": 16.781779068056494,
+  "peak_allocated_mb": 49.20263671875,
+  "physical_gpu": "2",
+  "torch_version": "2.10.0+cu128",
+  "transformers_version": "4.53.3"
+}

@@ -1,0 +1,28 @@
+{
+  "s1_setting": "weather_512_720_PatchTST_weather_ftM_sl512_ll48_pl720_dm128_nh16_el3_dl1_df256_fc1_ebtimeF_dtFalse_Exp_0",
+  "s1_checkpoint": "/home/bkai/CG2/SACQ/checkpoints/weather_512_720_PatchTST_weather_ftM_sl512_ll48_pl720_dm128_nh16_el3_dl1_df256_fc1_ebtimeF_dtFalse_Exp_0/checkpoint.pth",
+  "freeze_backbone": true,
+  "freeze_coarse_head": true,
+  "bootstrap_flatten_head": true,
+  "loss": "logcosh_scaled",
+  "logcosh_beta_mode": "auto_mad",
+  "alpha_variants": [
+    [
+      "a05",
+      0.5
+    ],
+    [
+      "a01",
+      0.1
+    ],
+    [
+      "a001",
+      0.01
+    ]
+  ],
+  "tasks": [
+    "Ws512p720SARtw_a05",
+    "Ws512p720SARtw_a01",
+    "Ws512p720SARtw_a001"
+  ]
+}

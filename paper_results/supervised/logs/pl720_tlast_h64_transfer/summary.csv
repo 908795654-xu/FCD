@@ -1,0 +1,7 @@
+dataset,variant,time_enable,pool,hidden,dropout,mse,mae,model_id,log_path
+ETTh1,base,0,last,64,0.0,0.4307560920715332,0.4538293182849884,h1s512p720TTxfer_base,/home/bkai/CG2/SACQ/logs/pl720_tlast_h64_transfer/logs/h1s512p720TTxfer_base.log
+ETTh1,tlast_h64,1,last,64,0.0,0.5032187700271606,0.5006901025772095,h1s512p720TTxfer_tlast_h64,/home/bkai/CG2/SACQ/logs/pl720_tlast_h64_transfer/logs/h1s512p720TTxfer_tlast_h64.log
+ETTm1,base,0,last,64,0.0,0.4157109260559082,0.4118625521659851,m1s512p720TTxfer_base,/home/bkai/CG2/SACQ/logs/pl720_tlast_h64_transfer/logs/m1s512p720TTxfer_base.log
+ETTm1,tlast_h64,1,last,64,0.0,0.4369771480560303,0.4266849160194397,m1s512p720TTxfer_tlast_h64,/home/bkai/CG2/SACQ/logs/pl720_tlast_h64_transfer/logs/m1s512p720TTxfer_tlast_h64.log
+ETTm2,base,0,last,64,0.0,0.35809412598609924,0.3786277770996094,m2s512p720TTxfer_base,/home/bkai/CG2/SACQ/logs/pl720_tlast_h64_transfer/logs/m2s512p720TTxfer_base.log
+ETTm2,tlast_h64,1,last,64,0.0,0.36566272377967834,0.3850647509098053,m2s512p720TTxfer_tlast_h64,/home/bkai/CG2/SACQ/logs/pl720_tlast_h64_transfer/logs/m2s512p720TTxfer_tlast_h64.log

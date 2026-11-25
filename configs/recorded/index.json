@@ -1,0 +1,18 @@
+[
+  {
+    "config": "configs/recorded/historical_1.json",
+    "log": "reproduction/historical_runs/weather_legacy_loss_verification/20261114_105719_1606233/logcosh_scaled/train.log"
+  },
+  {
+    "config": "configs/recorded/historical_2.json",
+    "log": "reproduction/historical_runs/weather_loss_remaining_verification/20261117_151148_347137/flatten_scaled/train.log"
+  },
+  {
+    "config": "configs/recorded/historical_3.json",
+    "log": "reproduction/historical_runs/weather_loss_remaining_verification/20261117_151148_347137/logcosh/train.log"
+  },
+  {
+    "config": "configs/recorded/historical_4.json",
+    "log": "reproduction/historical_runs/weather_loss_remaining_verification/20261117_151148_347137/mse/train.log"
+  }
+]

@@ -1,0 +1,31 @@
+{
+  "dataset": "ETTh1",
+  "seq_len": 512,
+  "pred_len": 720,
+  "shift_idx": 13936,
+  "n_total": 17420,
+  "stage1_setting": "TwS1_PatchTST_ETTh1_sl512_pl720_s1_0",
+  "stage2_setting": "TwS2_PatchTST_ETTh1_sl512_pl720_s2_0",
+  "sacq_gate_loss_weight": 0.2,
+  "sacq_corr_sign_loss_weight": 0.1,
+  "result": {
+    "mse": 44.23099136352539,
+    "mae": 1.2913094758987427,
+    "rse": 1.0055890083312988,
+    "rmse": 6.650638580322266,
+    "mape": 10.367969512939453,
+    "mspe": 42378.83984375,
+    "corr": 0.1473224014043808,
+    "smape": 0.914014458656311,
+    "mase": 4.882133117957924,
+    "ql50": 0.6456547379493713,
+    "pwmae": 2.1861325535432763,
+    "baseline_mse_t": 0.47642253835855075,
+    "threshold": 0.5717070460302609,
+    "recovery_steps": -1,
+    "alpha_pre_mean": 0.4484354808730076,
+    "alpha_post300_mean": 0.4566517973329333,
+    "alpha_post300_max": 0.5415476893123827
+  },
+  "plot_path": "logs/shift_patchtst_etth1_twostage/twostage_shift_curve.png"
+}

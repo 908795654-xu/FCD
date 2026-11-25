@@ -1,0 +1,32 @@
+{
+  "protocol": "native_v1",
+  "dataset": "etth1",
+  "backbone": "chronos",
+  "prediction_length": 720,
+  "seed": 2026,
+  "context_length": 512,
+  "batch_size": 32,
+  "series_chunk": 128,
+  "script_sha256": "2f26d7616834e1b768dd3e87121ff3b2e9a9125caf689595a84b89c969a405d8",
+  "downstream_training": false,
+  "run_name": "etth1_p720_chronos_native_seed2026_native_v1",
+  "complete": true,
+  "model_path": "/home/bkai/CG2/SACQ_TSFM/models_cache/chronos-bolt-mini",
+  "model_config_sha256": "4299e93f30bb8d99d8f7dbaa39a1dfc6bf827ae67d4ef4c0b6ba4ca3df514980",
+  "dataset_sha256": "f18de3ad269cef59bb07b5438d79bb3042d3be49bdeecf01c1cd6d29695ee066",
+  "test_windows": 2161,
+  "evaluated_windows": 2161,
+  "evaluated_elements": 10891440,
+  "test": {
+    "mse": 0.48796060467504415,
+    "mae": 0.46241389963181806
+  },
+  "method": "official_pipeline_long_forecast_median_quantile",
+  "dtype": "float32",
+  "metric_accumulation": "float64",
+  "metric_scale": "BenchmarkDataset standardized scale; no dataset inverse transform",
+  "timer_padding": null,
+  "elapsed_seconds": 14.581581713166088,
+  "peak_memory_mb": 311.33056640625,
+  "torch_version": "2.10.0+cu128"
+}

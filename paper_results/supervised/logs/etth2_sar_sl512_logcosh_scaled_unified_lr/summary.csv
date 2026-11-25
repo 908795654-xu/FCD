@@ -1,0 +1,5 @@
+task_id,status,return_code,gpu,elapsed_sec,dataset,seq_len,pred_len,variant,head_type,sacq_autoregressive,loss,setting,log_path,mse,mae,rse,rmse,mape,mspe,corr,smape,mase,ql50,pwmae
+E2s512p336SARslcu1,fail,-15,2,220.75,ETTh2,512,336,hSARslcu1,sacq_cross_attention,1,logcosh_scaled,E2s512p336SARslcu1_PatchTST_ETTh2_sl512_pl336_hSARslcu1_0,logs/etth2_sar_sl512_logcosh_scaled_unified_lr/logs/E2s512p336SARslcu1.log,,,,,,,,,,,
+E2s512p96SARslcu1,fail,-15,0,220.75,ETTh2,512,96,hSARslcu1,sacq_cross_attention,1,logcosh_scaled,E2s512p96SARslcu1_PatchTST_ETTh2_sl512_pl96_hSARslcu1_0,logs/etth2_sar_sl512_logcosh_scaled_unified_lr/logs/E2s512p96SARslcu1.log,,,,,,,,,,,
+E2s512p192SARslcu1,fail,-15,1,220.75,ETTh2,512,192,hSARslcu1,sacq_cross_attention,1,logcosh_scaled,E2s512p192SARslcu1_PatchTST_ETTh2_sl512_pl192_hSARslcu1_0,logs/etth2_sar_sl512_logcosh_scaled_unified_lr/logs/E2s512p192SARslcu1.log,,,,,,,,,,,
+E2s512p720SARslcu1,fail,-15,3,220.76,ETTh2,512,720,hSARslcu1,sacq_cross_attention,1,logcosh_scaled,E2s512p720SARslcu1_PatchTST_ETTh2_sl512_pl720_hSARslcu1_0,logs/etth2_sar_sl512_logcosh_scaled_unified_lr/logs/E2s512p720SARslcu1.log,,,,,,,,,,,

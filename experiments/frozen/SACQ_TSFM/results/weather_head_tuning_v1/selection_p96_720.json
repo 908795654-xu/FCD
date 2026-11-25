@@ -1,0 +1,110 @@
+[
+  {
+    "backbone": "ttm",
+    "horizon": 96,
+    "head": "linear",
+    "candidate": "lr_high"
+  },
+  {
+    "backbone": "ttm",
+    "horizon": 96,
+    "head": "mlp",
+    "candidate": "lr_high"
+  },
+  {
+    "backbone": "ttm",
+    "horizon": 96,
+    "head": "sacq",
+    "candidate": "lr_high"
+  },
+  {
+    "backbone": "ttm",
+    "horizon": 720,
+    "head": "linear",
+    "candidate": "lr_high"
+  },
+  {
+    "backbone": "ttm",
+    "horizon": 720,
+    "head": "mlp",
+    "candidate": "drop"
+  },
+  {
+    "backbone": "ttm",
+    "horizon": 720,
+    "head": "sacq",
+    "candidate": "drop"
+  },
+  {
+    "backbone": "chronos",
+    "horizon": 96,
+    "head": "linear",
+    "candidate": "lr_low"
+  },
+  {
+    "backbone": "chronos",
+    "horizon": 96,
+    "head": "mlp",
+    "candidate": "drop"
+  },
+  {
+    "backbone": "chronos",
+    "horizon": 96,
+    "head": "sacq",
+    "candidate": "lr_low"
+  },
+  {
+    "backbone": "chronos",
+    "horizon": 720,
+    "head": "linear",
+    "candidate": "lr_low"
+  },
+  {
+    "backbone": "chronos",
+    "horizon": 720,
+    "head": "mlp",
+    "candidate": "lr_low"
+  },
+  {
+    "backbone": "chronos",
+    "horizon": 720,
+    "head": "sacq",
+    "candidate": "lr_low"
+  },
+  {
+    "backbone": "timer",
+    "horizon": 96,
+    "head": "linear",
+    "candidate": "lr_high"
+  },
+  {
+    "backbone": "timer",
+    "horizon": 96,
+    "head": "mlp",
+    "candidate": "drop"
+  },
+  {
+    "backbone": "timer",
+    "horizon": 96,
+    "head": "sacq",
+    "candidate": "lr_high"
+  },
+  {
+    "backbone": "timer",
+    "horizon": 720,
+    "head": "linear",
+    "candidate": "lr_high"
+  },
+  {
+    "backbone": "timer",
+    "horizon": 720,
+    "head": "mlp",
+    "candidate": "lr_high"
+  },
+  {
+    "backbone": "timer",
+    "horizon": 720,
+    "head": "sacq",
+    "candidate": "drop"
+  }
+]

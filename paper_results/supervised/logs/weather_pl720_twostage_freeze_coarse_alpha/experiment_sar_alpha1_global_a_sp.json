@@ -1,0 +1,17 @@
+{
+  "mode": "sar_alpha1_global_a_sp",
+  "s1_setting": "weather_512_720_SAR_PatchTST_weather_ftM_sl512_ll48_pl720_dm128_nh16_el3_dl1_df256_fc1_ebtimeF_dtFalse_Exp_0",
+  "s1_checkpoint": "/home/bkai/CG2/SACQ/checkpoints/weather_512_720_SAR_PatchTST_weather_ftM_sl512_ll48_pl720_dm128_nh16_el3_dl1_df256_fc1_ebtimeF_dtFalse_Exp_0/checkpoint.pth",
+  "freeze_backbone": true,
+  "freeze_coarse_head": true,
+  "loss": "logcosh_scaled",
+  "logcosh_beta_mode": "auto_mad",
+  "tasks": [
+    "Ws512p720SARtw_a1galphasp"
+  ],
+  "bootstrap_flatten_head": false,
+  "sacq_alpha_mode": "fixed",
+  "sacq_alpha_value": 1.0,
+  "lradj": "constant",
+  "note": "y = scaffold + 1.0 * corr; only cross-attn decoder trains"
+}

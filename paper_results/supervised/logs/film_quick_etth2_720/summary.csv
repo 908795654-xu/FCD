@@ -1,0 +1,4 @@
+mode,model_id,mse,mae,log_path
+query_token,h2s512p720SARlcqt,0.3838772475719452,0.42154234647750854,/home/bkai/CG2/SACQ/logs/film_quick_etth2_720/logs/h2s512p720SARlcqt.log
+sparse,h2s512p720SARlcspr,0.3838810622692108,0.4215453267097473,/home/bkai/CG2/SACQ/logs/film_quick_etth2_720/logs/h2s512p720SARlcspr.log
+v_only,h2s512p720SARlcvonly,0.3838771879673004,0.42154234647750854,/home/bkai/CG2/SACQ/logs/film_quick_etth2_720/logs/h2s512p720SARlcvonly.log

@@ -1,0 +1,32 @@
+{
+  "protocol": "native_v1",
+  "dataset": "weather",
+  "backbone": "chronos",
+  "prediction_length": 720,
+  "seed": 2026,
+  "context_length": 512,
+  "batch_size": 128,
+  "series_chunk": 128,
+  "script_sha256": "2f26d7616834e1b768dd3e87121ff3b2e9a9125caf689595a84b89c969a405d8",
+  "downstream_training": false,
+  "run_name": "weather_p720_chronos_native_seed2026_native_v1",
+  "complete": true,
+  "model_path": "/home/bkai/CG2/SACQ_TSFM/models_cache/chronos-bolt-mini",
+  "model_config_sha256": "4299e93f30bb8d99d8f7dbaa39a1dfc6bf827ae67d4ef4c0b6ba4ca3df514980",
+  "dataset_sha256": "c7f365673c36a3a802d56936478a23cd3f6f336a820859a2b5172b5b6754dd42",
+  "test_windows": 9821,
+  "evaluated_windows": 9821,
+  "evaluated_elements": 148493520,
+  "test": {
+    "mse": 0.37606999035233324,
+    "mae": 0.3548030799856571
+  },
+  "method": "official_pipeline_long_forecast_median_quantile",
+  "dtype": "float32",
+  "metric_accumulation": "float64",
+  "metric_scale": "BenchmarkDataset standardized scale; no dataset inverse transform",
+  "timer_padding": null,
+  "elapsed_seconds": 186.72227416513488,
+  "peak_memory_mb": 349.65478515625,
+  "torch_version": "2.10.0+cu128"
+}

@@ -1,0 +1,38 @@
+{
+  "dataset": "ETTh1",
+  "seq_len": 512,
+  "pred_len": 720,
+  "shift_idx": 13936,
+  "n_total": 17420,
+  "level_mult": 1.5,
+  "trend_old_slope": 0.1,
+  "trend_new_slope": -0.2,
+  "setting": "ShPtfSdg_PatchTST_ETTh1_sl512_pl720_sSdg1_0",
+  "flags": {
+    "dsacq_enable": 1,
+    "dsacq_drift_gate_enable": 1,
+    "dsacq_mem_gate_enable": 1
+  },
+  "result": {
+    "mse": 44.245723724365234,
+    "mae": 1.2801963090896606,
+    "rse": 1.0056222677230835,
+    "rmse": 6.651745796203613,
+    "mape": 10.237380981445312,
+    "mspe": 42084.65234375,
+    "corr": 0.14858239889144897,
+    "smape": 0.8973345160484314,
+    "mase": 4.840116885027976,
+    "ql50": 0.6400981545448303,
+    "pwmae": 2.177279440954268,
+    "baseline_mse_t": 0.455500592329185,
+    "threshold": 0.5466007107950219,
+    "recovery_steps": -1,
+    "per_t_path": "logs/shift_patchtst_etth1_dsacq/artifacts/sacq_dsacq_per_t.csv",
+    "alpha_pre_mean": 0.49491325622585736,
+    "alpha_post300_mean": 0.4946502032939322,
+    "alpha_post300_p95_mean": 0.5156615384320418,
+    "alpha_post300_max": 0.5292272567749023
+  },
+  "plot_path": "logs/shift_patchtst_etth1_dsacq/sacq_dsacq_shift_curve.png"
+}

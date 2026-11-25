@@ -1,0 +1,17 @@
+dataset,pred_len,variant,sacq_mem_film_enable,mse,mae,log_path
+ETTh1,720,film0,0,0.42860984802246094,0.45432278513908386,/home/bkai/CG2/SACQ/logs/film_ablation/logs/h1s512p720SARlcfilm0.log
+ETTh1,720,film1,1,0.4289509654045105,0.4535661041736603,/home/bkai/CG2/SACQ/logs/film_ablation/logs/h1s512p720SARlcfilm1.log
+ETTh2,720,film0,0,0.3844214677810669,0.42241841554641724,/home/bkai/CG2/SACQ/logs/film_ablation/logs/h2s512p720SARlcfilm0.log
+ETTh2,720,film1,1,0.3854537606239319,0.42248812317848206,/home/bkai/CG2/SACQ/logs/film_ablation/logs/h2s512p720SARlcfilm1.log
+ETTm1,720,film0,0,0.42088237404823303,0.41393542289733887,/home/bkai/CG2/SACQ/logs/film_ablation/logs/m1s512p720SARlcfilm0.log
+ETTm1,720,film1,1,0.41716718673706055,0.41180670261383057,/home/bkai/CG2/SACQ/logs/film_ablation/logs/m1s512p720SARlcfilm1.log
+ETTm2,720,film0,0,0.35984745621681213,0.3808147609233856,/home/bkai/CG2/SACQ/logs/film_ablation/logs/m2s512p720SARlcfilm0.log
+ETTm2,720,film1,1,0.357739120721817,0.37891578674316406,/home/bkai/CG2/SACQ/logs/film_ablation/logs/m2s512p720SARlcfilm1.log
+ETTh1,96,film0,0,0.362678587436676,0.3932568430900574,/home/bkai/CG2/SACQ/logs/film_ablation/logs/h1s512p96SARlcfilm0.log
+ETTh1,96,film1,1,0.3624148666858673,0.392996221780777,/home/bkai/CG2/SACQ/logs/film_ablation/logs/h1s512p96SARlcfilm1.log
+ETTh2,96,film0,0,0.27307283878326416,0.3330850899219513,/home/bkai/CG2/SACQ/logs/film_ablation/logs/h2s512p96SARlcfilm0.log
+ETTh2,96,film1,1,0.2745891809463501,0.3344089984893799,/home/bkai/CG2/SACQ/logs/film_ablation/logs/h2s512p96SARlcfilm1.log
+ETTm1,96,film0,0,0.2890464961528778,0.33675146102905273,/home/bkai/CG2/SACQ/logs/film_ablation/logs/m1s512p96SARlcfilm0.log
+ETTm1,96,film1,1,0.2896348834037781,0.33709678053855896,/home/bkai/CG2/SACQ/logs/film_ablation/logs/m1s512p96SARlcfilm1.log
+ETTm2,96,film0,0,0.15978878736495972,0.24747276306152344,/home/bkai/CG2/SACQ/logs/film_ablation/logs/m2s512p96SARlcfilm0.log
+ETTm2,96,film1,1,0.15964798629283905,0.24757637083530426,/home/bkai/CG2/SACQ/logs/film_ablation/logs/m2s512p96SARlcfilm1.log

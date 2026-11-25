@@ -1,0 +1,137 @@
+{
+  "complete": true,
+  "fingerprint": "8594140e33de0d81d9a3671a58fc4a9c40070e305f7191b15c56aae8eb81e832",
+  "backbone": "ttm",
+  "prediction_length": 720,
+  "head": "sacq",
+  "learning_rate": 0.0001,
+  "seed": 2026,
+  "batch_size": 32,
+  "weight_decay": 0.01,
+  "max_epochs": 50,
+  "patience": 7,
+  "initial_val": {
+    "mse": 2.153361813345694,
+    "mae": 1.0824041572338232
+  },
+  "best_val": {
+    "mse": 1.39681058746449,
+    "mae": 0.8242228894220711
+  },
+  "best_epoch": 2,
+  "history": [
+    {
+      "epoch": 1,
+      "train": {
+        "mse": 0.6614734331436833,
+        "mae": 0.5912747777242636
+      },
+      "val": {
+        "mse": 1.410559097736353,
+        "mae": 0.8333469827156725
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 2,
+      "train": {
+        "mse": 0.5711795480924052,
+        "mae": 0.5440380856490977
+      },
+      "val": {
+        "mse": 1.39681058746449,
+        "mae": 0.8242228894220711
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 3,
+      "train": {
+        "mse": 0.5547198260004327,
+        "mae": 0.5343182790531447
+      },
+      "val": {
+        "mse": 1.405300585557913,
+        "mae": 0.8249598417806471
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 4,
+      "train": {
+        "mse": 0.5454753096621985,
+        "mae": 0.5297588833186028
+      },
+      "val": {
+        "mse": 1.4129638896684067,
+        "mae": 0.8255503110897596
+      },
+      "learning_rate": 0.0001
+    },
+    {
+      "epoch": 5,
+      "train": {
+        "mse": 0.5392860464896972,
+        "mae": 0.5270655839928043
+      },
+      "val": {
+        "mse": 1.4172954614558488,
+        "mae": 0.8266678287755777
+      },
+      "learning_rate": 5e-05
+    },
+    {
+      "epoch": 6,
+      "train": {
+        "mse": 0.5360363813976133,
+        "mae": 0.525664970948047
+      },
+      "val": {
+        "mse": 1.4201023399744295,
+        "mae": 0.8268743279371442
+      },
+      "learning_rate": 5e-05
+    },
+    {
+      "epoch": 7,
+      "train": {
+        "mse": 0.5333595550570392,
+        "mae": 0.5244171199664297
+      },
+      "val": {
+        "mse": 1.4226218587330657,
+        "mae": 0.8278542801322375
+      },
+      "learning_rate": 2.5e-05
+    },
+    {
+      "epoch": 8,
+      "train": {
+        "mse": 0.531915931109785,
+        "mae": 0.5238734176519844
+      },
+      "val": {
+        "mse": 1.424762819178546,
+        "mae": 0.8285465074911526
+      },
+      "learning_rate": 2.5e-05
+    },
+    {
+      "epoch": 9,
+      "train": {
+        "mse": 0.5306427980776433,
+        "mae": 0.523260126395559
+      },
+      "val": {
+        "mse": 1.425821149714474,
+        "mae": 0.8287198765478667
+      },
+      "learning_rate": 1.25e-05
+    }
+  ],
+  "backbone_unchanged": true,
+  "checkpoint": "/home/bkai/CG2/SACQ_TSFM/results/tuning_etth1_lr_v1/etth1_p720_ttm_sacq_seed2026_lr1e-04.pt",
+  "elapsed_seconds": 31.26143171498552,
+  "selection": "validation_mse",
+  "test_evaluated": false
+}

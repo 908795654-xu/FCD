@@ -1,0 +1,101 @@
+{
+  "backbone": "chronos",
+  "head": "linear",
+  "context_length": 512,
+  "prediction_length": 96,
+  "n_vars": 7,
+  "hidden_dim": 384,
+  "patch_count": 32,
+  "trainable_parameters": 1179744,
+  "frozen_parameters": 21236096,
+  "run_name": "etth1_p96_chronos_linear_seed2028",
+  "dataset": "ETTh1",
+  "seed": 2028,
+  "device": "cuda:0",
+  "batch_size": 32,
+  "max_epochs": 50,
+  "completed_epochs": 8,
+  "patience": 7,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "loss": "mse",
+  "best_epoch": 1,
+  "best_val": {
+    "mse": 0.724517517305087,
+    "mae": 0.574508218797056
+  },
+  "test": {
+    "mse": 0.3826824487779266,
+    "mae": 0.40857189503288416
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.3495783915180473,
+      "val_mse": 0.724517517305087,
+      "val_mae": 0.574508218797056,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 3.3180642819497734
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.30492250378871194,
+      "val_mse": 0.7292514221906927,
+      "val_mae": 0.5760277918916468,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 3.009703102055937
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.2882639300878119,
+      "val_mse": 0.7427847118105371,
+      "val_mae": 0.5801923075119348,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 3.004625602159649
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.2749850867242159,
+      "val_mse": 0.7458681591679991,
+      "val_mae": 0.5812945066929638,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 3.004416464129463
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.2694772293599415,
+      "val_mse": 0.748024184236855,
+      "val_mae": 0.5834068690995696,
+      "learning_rate": 2.5e-05,
+      "epoch_seconds": 2.9947093189693987
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.26404497975298735,
+      "val_mse": 0.7463863086708593,
+      "val_mae": 0.5825215542592624,
+      "learning_rate": 2.5e-05,
+      "epoch_seconds": 2.9962854040786624
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.2618013444207873,
+      "val_mse": 0.7511562789965259,
+      "val_mae": 0.5842469448165587,
+      "learning_rate": 1.25e-05,
+      "epoch_seconds": 2.9981214068830013
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.2590280927965327,
+      "val_mse": 0.7512327281452605,
+      "val_mae": 0.5840115564220266,
+      "learning_rate": 1.25e-05,
+      "epoch_seconds": 3.004042015178129
+    }
+  ],
+  "elapsed_seconds": 25.750056663062423,
+  "peak_memory_mb": 262.88916015625,
+  "backbone_unchanged": true,
+  "checkpoint_path": "/home/bkai/CG2/SACQ_TSFM/checkpoints/formal/etth1_p96_chronos_linear_seed2028.pt"
+}

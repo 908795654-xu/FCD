@@ -1,0 +1,153 @@
+{
+  "backbone": "chronos",
+  "head": "sacq",
+  "context_length": 512,
+  "prediction_length": 720,
+  "n_vars": 321,
+  "hidden_dim": 384,
+  "patch_count": 32,
+  "trainable_parameters": 11977453,
+  "frozen_parameters": 21236096,
+  "run_name": "electricity_p720_chronos_sacq_seed2028_frozen_v1",
+  "dataset": "electricity",
+  "seed": 2028,
+  "device": "cuda:0",
+  "batch_size": 8,
+  "max_epochs": 50,
+  "completed_epochs": 14,
+  "patience": 7,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "loss": "mse",
+  "best_epoch": 6,
+  "initial_val": {
+    "mse": 0.8719737411921537,
+    "mae": 0.7634253607546515
+  },
+  "best_val": {
+    "mse": 0.1704285551844434,
+    "mae": 0.26205756091505383
+  },
+  "test": {
+    "mse": 0.20033241416070105,
+    "mae": 0.2922076950140769
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_mse": null,
+      "val_mse": 0.8719737411921537,
+      "val_mae": 0.7634253607546515,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 0.0
+    },
+    {
+      "epoch": 1,
+      "train_mse": 0.22649644019578613,
+      "val_mse": 0.17624704249662548,
+      "val_mae": 0.26827729087339025,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 460.6802726080641
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.21342706981512757,
+      "val_mse": 0.17665928922267146,
+      "val_mae": 0.27129268491408404,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 460.25455653411336
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.21025324867193,
+      "val_mse": 0.18195218022626267,
+      "val_mae": 0.2722757147781641,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 460.295130033046
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.20442095796215154,
+      "val_mse": 0.17227817962360567,
+      "val_mae": 0.2625087525173034,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 460.12537262402475
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.2034308007436348,
+      "val_mse": 0.17318445159824553,
+      "val_mae": 0.2631596939778019,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 460.69931454304606
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.20218886107624384,
+      "val_mse": 0.1704285551844434,
+      "val_mae": 0.26205756091505383,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 460.1889779109042
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.20107915752231434,
+      "val_mse": 0.17335231188656006,
+      "val_mae": 0.2661733367795769,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 460.4560250141658
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.19953609215395185,
+      "val_mse": 0.1775214287602231,
+      "val_mae": 0.2664328805847521,
+      "learning_rate": 2.5e-05,
+      "epoch_seconds": 460.2304129761178
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.19580046263436182,
+      "val_mse": 0.17241672483433185,
+      "val_mae": 0.26217143132923487,
+      "learning_rate": 2.5e-05,
+      "epoch_seconds": 460.1757509680465
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.1943259090896355,
+      "val_mse": 0.17273336554130714,
+      "val_mae": 0.26056158211149977,
+      "learning_rate": 1.25e-05,
+      "epoch_seconds": 460.2582620989997
+    },
+    {
+      "epoch": 11,
+      "train_mse": 0.191653141993755,
+      "val_mse": 0.1721451877934591,
+      "val_mae": 0.25980677013351666,
+      "learning_rate": 1.25e-05,
+      "epoch_seconds": 471.01189892808907
+    },
+    {
+      "epoch": 12,
+      "train_mse": 0.1904498496349307,
+      "val_mse": 0.17262476015862271,
+      "val_mae": 0.26028752128246063,
+      "learning_rate": 6.25e-06,
+      "epoch_seconds": 493.60123462905176
+    },
+    {
+      "epoch": 13,
+      "train_mse": 0.1888415337269773,
+      "val_mse": 0.17045453906107436,
+      "val_mae": 0.2584517250469924,
+      "learning_rate": 6.25e-06,
+      "epoch_seconds": 496.86170007800683
+    }
+  ],
+  "elapsed_seconds": 6189.129177575,
+  "peak_memory_mb": 7899.44775390625,
+  "backbone_unchanged": true,
+  "checkpoint_path": "/home/bkai/CG2/SACQ_TSFM/checkpoints/formal/electricity_p720_chronos_sacq_seed2028_frozen_v1.pt"
+}

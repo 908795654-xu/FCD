@@ -1,0 +1,121 @@
+{
+  "backbone": "chronos",
+  "head": "linear",
+  "context_length": 512,
+  "prediction_length": 96,
+  "n_vars": 21,
+  "hidden_dim": 384,
+  "patch_count": 32,
+  "trainable_parameters": 1179744,
+  "frozen_parameters": 21236096,
+  "run_name": "weather_p96_chronos_linear_seed2028_frozen_v1",
+  "dataset": "weather",
+  "seed": 2028,
+  "device": "cuda:0",
+  "batch_size": 128,
+  "max_epochs": 50,
+  "completed_epochs": 10,
+  "patience": 7,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "loss": "mse",
+  "best_epoch": 2,
+  "initial_val": {
+    "mse": 0.6832998453184344,
+    "mae": 0.5049771868478439
+  },
+  "best_val": {
+    "mse": 0.38880321212851787,
+    "mae": 0.27618855777793166
+  },
+  "test": {
+    "mse": 0.14654008614240396,
+    "mae": 0.19713868224485945
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_mse": null,
+      "val_mse": 0.6832998453184344,
+      "val_mae": 0.5049771868478439,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 0.0
+    },
+    {
+      "epoch": 1,
+      "train_mse": 0.41369233870716576,
+      "val_mse": 0.38921561465172466,
+      "val_mae": 0.2772999066692878,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 24.55891713593155
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.39003396071041824,
+      "val_mse": 0.38880321212851787,
+      "val_mae": 0.27618855777793166,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 24.51011985493824
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.38381422153512856,
+      "val_mse": 0.38901296048911566,
+      "val_mae": 0.2755795394086029,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 24.512378056067973
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.37970138849339385,
+      "val_mse": 0.3900623005438158,
+      "val_mae": 0.27530763447407214,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 24.532796502113342
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.37610446540628534,
+      "val_mse": 0.39138644522819427,
+      "val_mae": 0.275442645935399,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 24.519341243896633
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.37477955837233984,
+      "val_mse": 0.39121957335239016,
+      "val_mae": 0.27577323402626064,
+      "learning_rate": 2.5e-05,
+      "epoch_seconds": 24.52986228791997
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.37320056984811,
+      "val_mse": 0.390433869344996,
+      "val_mae": 0.2759267403596532,
+      "learning_rate": 2.5e-05,
+      "epoch_seconds": 24.534422071184963
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.37261550621003275,
+      "val_mse": 0.3931697504413379,
+      "val_mae": 0.276656831206312,
+      "learning_rate": 1.25e-05,
+      "epoch_seconds": 24.54426733404398
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.37188777149446484,
+      "val_mse": 0.39138742677294197,
+      "val_mae": 0.2755224444748113,
+      "learning_rate": 1.25e-05,
+      "epoch_seconds": 24.539583457633853
+    }
+  ],
+  "elapsed_seconds": 233.18246108386666,
+  "peak_memory_mb": 1811.82861328125,
+  "backbone_unchanged": true,
+  "checkpoint_path": "/home/bkai/CG2/SACQ_TSFM/checkpoints/formal/weather_p96_chronos_linear_seed2028_frozen_v1.pt"
+}

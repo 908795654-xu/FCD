@@ -1,0 +1,22 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.vscode/
+.idea/
+.env
+.env.*
+!.env.example
+.venv/
+venv/
+dataset/
+datasets/
+models_cache/
+checkpoints/
+logs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.npy
+*.npz
+# Existing results JSON/CSV are intentionally retained as reference records.

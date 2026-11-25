@@ -1,0 +1,150 @@
+{
+  "complete": true,
+  "smoke": false,
+  "config": {
+    "dataset": "weather",
+    "backbone": "chronos",
+    "horizon": 96,
+    "variant": "sacq:wd_high:tune",
+    "head": "sacq",
+    "candidate": "wd_high",
+    "seed": 2026,
+    "batch_size": 128,
+    "max_epochs": 50,
+    "patience": 7,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.1,
+    "head_dropout": 0.0,
+    "context_length": 512,
+    "loss": "mse",
+    "optimizer": "AdamW",
+    "selection": "validation_mse",
+    "evaluate_test_after_selection": false,
+    "frozen_backbone": true
+  },
+  "fingerprint": "a440be6a722f355bcd91beb1575664ef095daf67bbd3eb7dfee81e353a966e8d",
+  "backbone": "chronos",
+  "horizon": 96,
+  "variant": "sacq:wd_high:tune",
+  "seed": 2026,
+  "metadata": {
+    "backbone": "chronos",
+    "head": "sacq",
+    "context_length": 512,
+    "prediction_length": 96,
+    "n_vars": 21,
+    "hidden_dim": 384,
+    "patch_count": 32,
+    "trainable_parameters": 4309117,
+    "frozen_parameters": 21236096
+  },
+  "core_init_sha256": "6b10f6ea47f5b6ed7d667609f5474da09cb5921a614b359f2cb0bf966a2d210a",
+  "post_build_cpu_rng_sha256": "ea5f81ba113d4171e56bd549ad832ab1a6e530d7ce85f4efc9c91ea3e1a9b5ad",
+  "initial_val": {
+    "mse": 0.9720289453983902,
+    "mae": 0.5988229611705529
+  },
+  "best_val": {
+    "mse": 0.3880924545726187,
+    "mae": 0.2754812129076031
+  },
+  "best_epoch": 2,
+  "completed_epochs": 9,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.4276145677715598,
+      "val_mse": 0.38942018406194945,
+      "val_mae": 0.2792038761478308,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 0.0001,
+      "seconds": 36.8029995970428
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.3930262823525048,
+      "val_mse": 0.3880924545726187,
+      "val_mae": 0.2754812129076031,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 0.0001,
+      "seconds": 36.75095839006826
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.3858899959864038,
+      "val_mse": 0.3897804356797027,
+      "val_mae": 0.2746870830389415,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 0.0001,
+      "seconds": 36.78705969220027
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.3813006279433713,
+      "val_mse": 0.3919666253577931,
+      "val_mae": 0.27812769733153425,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 5e-05,
+      "seconds": 36.77086616400629
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.37733813131348404,
+      "val_mse": 0.3888315599993285,
+      "val_mae": 0.27447470991230155,
+      "learning_rate_used": 5e-05,
+      "learning_rate_next": 5e-05,
+      "seconds": 36.73253339296207
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.37541516433085964,
+      "val_mse": 0.39033963036426883,
+      "val_mae": 0.2753493306116293,
+      "learning_rate_used": 5e-05,
+      "learning_rate_next": 2.5e-05,
+      "seconds": 36.67481387825683
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.3732233228161524,
+      "val_mse": 0.39104054892337686,
+      "val_mae": 0.2747675857408099,
+      "learning_rate_used": 2.5e-05,
+      "learning_rate_next": 2.5e-05,
+      "seconds": 36.69299148302525
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.3721441095253698,
+      "val_mse": 0.3914291376148014,
+      "val_mae": 0.2753548831451032,
+      "learning_rate_used": 2.5e-05,
+      "learning_rate_next": 1.25e-05,
+      "seconds": 36.76673985598609
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.37090986390982783,
+      "val_mse": 0.3914971429577969,
+      "val_mae": 0.27508407549097047,
+      "learning_rate_used": 1.25e-05,
+      "learning_rate_next": 1.25e-05,
+      "seconds": 36.72962234495208
+    }
+  ],
+  "dataset_lengths": {
+    "train": 36280,
+    "val": 5174
+  },
+  "head_gradient_checked": true,
+  "backbone_unchanged": true,
+  "test_evaluated": false,
+  "test": null,
+  "checkpoint": "/home/bkai/CG2/SACQ_TSFM/checkpoints/weather_head_tuning_v1/weather_p96_chronos_sacq_wd_high_tune_seed2026.pt",
+  "elapsed_seconds": 330.85294185578823,
+  "peak_allocated_mb": 2673.056640625,
+  "physical_gpu": "2",
+  "torch_version": "2.10.0+cu128",
+  "transformers_version": "4.53.3"
+}

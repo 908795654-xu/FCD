@@ -1,0 +1,213 @@
+{
+  "complete": true,
+  "smoke": false,
+  "config": {
+    "dataset": "weather",
+    "backbone": "ttm",
+    "horizon": 720,
+    "variant": "sacq:lr_high:tune",
+    "head": "sacq",
+    "candidate": "lr_high",
+    "seed": 2026,
+    "batch_size": 128,
+    "max_epochs": 50,
+    "patience": 7,
+    "learning_rate": 0.0003,
+    "weight_decay": 0.01,
+    "head_dropout": 0.0,
+    "context_length": 512,
+    "loss": "mse",
+    "optimizer": "AdamW",
+    "selection": "validation_mse",
+    "evaluate_test_after_selection": false,
+    "frozen_backbone": true
+  },
+  "fingerprint": "a440be6a722f355bcd91beb1575664ef095daf67bbd3eb7dfee81e353a966e8d",
+  "backbone": "ttm",
+  "horizon": 720,
+  "variant": "sacq:lr_high:tune",
+  "seed": 2026,
+  "metadata": {
+    "backbone": "ttm",
+    "head": "sacq",
+    "context_length": 512,
+    "prediction_length": 720,
+    "n_vars": 21,
+    "hidden_dim": 128,
+    "patch_count": 8,
+    "trainable_parameters": 1095661,
+    "frozen_parameters": 1444880
+  },
+  "core_init_sha256": "de8d3c84fadffed7c9879536f36f65feff416801a5470d5f1b50124b8a135368",
+  "post_build_cpu_rng_sha256": "8f5ca1b4f1320f6336010ae3fc267600fb0c78f41fbd7d53167f7a891610907c",
+  "initial_val": {
+    "mse": 0.9204480556343666,
+    "mae": 0.602625183457092
+  },
+  "best_val": {
+    "mse": 0.6128973743449323,
+    "mae": 0.42558676140555346
+  },
+  "best_epoch": 9,
+  "completed_epochs": 16,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.6072948891572154,
+      "val_mse": 0.6243124230819352,
+      "val_mae": 0.4331070096365705,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 20.772031965199858
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.5820455806231362,
+      "val_mse": 0.6206428807063776,
+      "val_mae": 0.42947869162675434,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 20.642504402901977
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.5784162846202034,
+      "val_mse": 0.6183333148553652,
+      "val_mae": 0.42799010796772585,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 20.659263728186488
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.576054664074905,
+      "val_mse": 0.6165966355720864,
+      "val_mae": 0.42720300331244315,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 20.648165517952293
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.5743002858283395,
+      "val_mse": 0.6159725112537711,
+      "val_mae": 0.42704003022530984,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 20.739356421865523
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.5729050617141439,
+      "val_mse": 0.6149453179960909,
+      "val_mae": 0.42646304173931066,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 20.661268279887736
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.5716580803621687,
+      "val_mse": 0.6150217098657507,
+      "val_mae": 0.4266325998945442,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.0003,
+      "seconds": 20.65574281802401
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.5694948928874572,
+      "val_mse": 0.6155643180862806,
+      "val_mae": 0.42756819468928703,
+      "learning_rate_used": 0.0003,
+      "learning_rate_next": 0.00015,
+      "seconds": 20.66333497641608
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.5594308843823934,
+      "val_mse": 0.6128973743449323,
+      "val_mae": 0.42558676140555346,
+      "learning_rate_used": 0.00015,
+      "learning_rate_next": 0.00015,
+      "seconds": 20.679972840007395
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.5452339411655309,
+      "val_mse": 0.6188772296917415,
+      "val_mae": 0.43146692358932104,
+      "learning_rate_used": 0.00015,
+      "learning_rate_next": 0.00015,
+      "seconds": 20.66363728325814
+    },
+    {
+      "epoch": 11,
+      "train_mse": 0.5323406259253035,
+      "val_mse": 0.6185217255770088,
+      "val_mae": 0.430604030705085,
+      "learning_rate_used": 0.00015,
+      "learning_rate_next": 7.5e-05,
+      "seconds": 20.64872071193531
+    },
+    {
+      "epoch": 12,
+      "train_mse": 0.5207159544577559,
+      "val_mse": 0.6207590800901988,
+      "val_mae": 0.4321999489781223,
+      "learning_rate_used": 7.5e-05,
+      "learning_rate_next": 7.5e-05,
+      "seconds": 20.665338387247175
+    },
+    {
+      "epoch": 13,
+      "train_mse": 0.5146249091909112,
+      "val_mse": 0.6252743817667078,
+      "val_mae": 0.4347889546876406,
+      "learning_rate_used": 7.5e-05,
+      "learning_rate_next": 3.75e-05,
+      "seconds": 20.642166391015053
+    },
+    {
+      "epoch": 14,
+      "train_mse": 0.5091549614117448,
+      "val_mse": 0.6261024937228267,
+      "val_mae": 0.43539071463669765,
+      "learning_rate_used": 3.75e-05,
+      "learning_rate_next": 3.75e-05,
+      "seconds": 20.670266109984368
+    },
+    {
+      "epoch": 15,
+      "train_mse": 0.5064474936937671,
+      "val_mse": 0.6290911851618547,
+      "val_mae": 0.43681659198781614,
+      "learning_rate_used": 3.75e-05,
+      "learning_rate_next": 1.875e-05,
+      "seconds": 20.67154059605673
+    },
+    {
+      "epoch": 16,
+      "train_mse": 0.503995757008184,
+      "val_mse": 0.6286487943535639,
+      "val_mae": 0.4364810484293671,
+      "learning_rate_used": 1.875e-05,
+      "learning_rate_next": 1.875e-05,
+      "seconds": 20.778768038842827
+    }
+  ],
+  "dataset_lengths": {
+    "train": 35656,
+    "val": 4550
+  },
+  "head_gradient_checked": true,
+  "backbone_unchanged": true,
+  "test_evaluated": false,
+  "test": null,
+  "checkpoint": "/home/bkai/CG2/SACQ_TSFM/checkpoints/weather_head_tuning_v1/weather_p720_ttm_sacq_lr_high_tune_seed2026.pt",
+  "elapsed_seconds": 330.95012982096523,
+  "peak_allocated_mb": 3568.76123046875,
+  "physical_gpu": "2",
+  "torch_version": "2.10.0+cu128",
+  "transformers_version": "4.53.3"
+}

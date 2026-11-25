@@ -1,0 +1,5 @@
+task_id,status,return_code,gpu,elapsed_sec,pred_len,variant,sacq_scheme,setting,log_path,mse,mae
+E2s512p720mPtfS6,ok,0,3,287.33,720,hS6,template_ar,E2s512p720S6_PatchTST_ETTh2_sl512_pl720_hS6_0,logs/etth2_schemes_s1_s6/logs/E2s512p720mPtfS6.log,0.4303840398788452,0.45569396018981934
+E2s512p720mPtfS1,ok,0,2,376.03,720,hS1,dual_residual,E2s512p720S1_PatchTST_ETTh2_sl512_pl720_hS1_0,logs/etth2_schemes_s1_s6/logs/E2s512p720mPtfS1.log,0.3789190351963043,0.42178112268447876
+E2s512p96mPtfS6,ok,0,1,398.67,96,hS6,template_ar,E2s512p96S6_PatchTST_ETTh2_sl512_pl96_hS6_0,logs/etth2_schemes_s1_s6/logs/E2s512p96mPtfS6.log,0.3213432729244232,0.3750289976596832
+E2s512p96mPtfS1,ok,0,0,400.32,96,hS1,dual_residual,E2s512p96S1_PatchTST_ETTh2_sl512_pl96_hS1_0,logs/etth2_schemes_s1_s6/logs/E2s512p96mPtfS1.log,0.27377378940582275,0.33729827404022217

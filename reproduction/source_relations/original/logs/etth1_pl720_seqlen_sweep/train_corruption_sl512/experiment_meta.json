@@ -1,0 +1,77 @@
+{
+  "seq_len": 512,
+  "pred_len": 720,
+  "split": "train",
+  "note": "mask on full history; spike/shift on OT channel in history",
+  "corruptions": [
+    [
+      "clean",
+      {}
+    ],
+    [
+      "mask_15",
+      {
+        "kind": "mask",
+        "ratio": 0.15
+      }
+    ],
+    [
+      "mask_30",
+      {
+        "kind": "mask",
+        "ratio": 0.3
+      }
+    ],
+    [
+      "mask_45",
+      {
+        "kind": "mask",
+        "ratio": 0.45
+      }
+    ],
+    [
+      "spike_3sigma",
+      {
+        "kind": "spike",
+        "sigma_mult": 3.0
+      }
+    ],
+    [
+      "spike_5sigma",
+      {
+        "kind": "spike",
+        "sigma_mult": 5.0
+      }
+    ],
+    [
+      "shift_10_20",
+      {
+        "kind": "shift",
+        "low": 0.1,
+        "high": 0.2
+      }
+    ]
+  ],
+  "models": [
+    {
+      "tag": "flat_mse",
+      "label": "Flatten+MSE",
+      "setting": "ETTh1_512_720_PatchTST_ETTh1_sl512_pl720_Exp_0"
+    },
+    {
+      "tag": "flat_slc",
+      "label": "Flatten+logcosh",
+      "setting": "ETTh1_512_720_PatchTST_ETTh1_sl512_pl720_hFlatslc_0"
+    },
+    {
+      "tag": "sar_mse",
+      "label": "SAR+MSE",
+      "setting": "H1s512p720SAR_PatchTST_ETTh1_sl512_pl720_hSAR_0"
+    },
+    {
+      "tag": "sar_slc",
+      "label": "SAR+logcosh",
+      "setting": "H1s512p720SARslc_PatchTST_ETTh1_sl512_pl720_hSARslc_0"
+    }
+  ]
+}

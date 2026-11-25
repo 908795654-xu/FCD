@@ -1,0 +1,32 @@
+{
+  "protocol": "native_v1",
+  "dataset": "electricity",
+  "backbone": "timer",
+  "prediction_length": 720,
+  "seed": 2026,
+  "context_length": 512,
+  "batch_size": 8,
+  "series_chunk": 128,
+  "script_sha256": "2f26d7616834e1b768dd3e87121ff3b2e9a9125caf689595a84b89c969a405d8",
+  "downstream_training": false,
+  "run_name": "electricity_p720_timer_native_seed2026_native_v1",
+  "complete": true,
+  "model_path": "/home/bkai/CG2/SACQ_TSFM/models_cache/timer-base-84m",
+  "model_config_sha256": "8cf274b6192f6114a0988d1e70277c69531db3611866ae7d4c6f82819c469c7e",
+  "dataset_sha256": "0eb3b9220d7a813f46189281679c7bb85c1f535ea40cad3c1fde09146d1f0a27",
+  "test_windows": 4542,
+  "evaluated_windows": 4542,
+  "evaluated_elements": 1049747040,
+  "test": {
+    "mse": 0.2255554283255211,
+    "mae": 0.3130291989571744
+  },
+  "method": "native_head_manual_autoregression_fixed_context_scaling",
+  "dtype": "float32",
+  "metric_accumulation": "float64",
+  "metric_scale": "BenchmarkDataset standardized scale; no dataset inverse transform",
+  "timer_padding": 64,
+  "elapsed_seconds": 834.7558527300134,
+  "peak_memory_mb": 514.8974609375,
+  "torch_version": "2.10.0+cu128"
+}

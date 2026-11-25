@@ -1,0 +1,57 @@
+{
+  "preset": "gradual_ramp",
+  "shift_idx": 12542,
+  "n_total": 17420,
+  "data_path": "ETTh2_shift_gradual_ramp.csv",
+  "info": {
+    "dataset": "ETTh2",
+    "preset": "gradual_ramp",
+    "shift_type": "gradual_ramp",
+    "shift_idx": 12542,
+    "n_total": 17420,
+    "shock_steps": 300,
+    "recovery_steps": 200,
+    "dst_csv": "/home/bkai/CG2/SACQ/dataset/ETTh2_shift_gradual_ramp.csv",
+    "params": {
+      "shift_type": "gradual_ramp",
+      "shift_ratio": 0.72,
+      "level_mult_end": 1.4,
+      "slope_end": -0.18,
+      "old_slope": 0.1
+    }
+  },
+  "models": [
+    {
+      "tag": "Flatten",
+      "mse": 2.6532721519470215,
+      "mae": 1.027072787284851,
+      "slope_post": -0.13400892126832703
+    },
+    {
+      "tag": "S1",
+      "mse": 2.6557416915893555,
+      "mae": 1.0236661434173584,
+      "slope_post": -0.16232320385831228
+    },
+    {
+      "tag": "S2",
+      "mse": 2.6558430194854736,
+      "mae": 1.0239083766937256,
+      "slope_post": -0.14753858920074311
+    },
+    {
+      "tag": "S12",
+      "mse": 2.666886806488037,
+      "mae": 1.0266506671905518,
+      "slope_post": -0.15312880560537473
+    }
+  ],
+  "plots": {
+    "main": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp/drift_main_panel.png",
+    "time": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp/drift_mse_vs_time.png",
+    "intensity": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp/drift_mse_vs_intensity.png",
+    "relative": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp/drift_mse_relative_post.png",
+    "slope_bar": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp/drift_degradation_slope.png",
+    "ratio_vs_clean": "/home/bkai/CG2/SACQ/logs/etth2_drift_shift/gradual_ramp/drift_mse_ratio_vs_clean.png"
+  }
+}

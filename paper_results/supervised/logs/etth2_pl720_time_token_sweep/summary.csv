@@ -1,0 +1,7 @@
+tag,time_enable,pool,hidden,dropout,mse,mae,model_id,log_path
+tlast_h64,1,last,64,0.0,0.35245880484580994,0.4135584831237793,H2s512p720TTtlast_h64,/home/bkai/CG2/SACQ/logs/etth2_pl720_time_token_sweep/logs/H2s512p720TTtlast_h64.log
+tlast_h64d01,1,last,64,0.1,0.35303476452827454,0.41354650259017944,H2s512p720TTtlast_h64d01,/home/bkai/CG2/SACQ/logs/etth2_pl720_time_token_sweep/logs/H2s512p720TTtlast_h64d01.log
+tmean_h64,1,mean,64,0.0,0.35726267099380493,0.41789400577545166,H2s512p720TTtmean_h64,/home/bkai/CG2/SACQ/logs/etth2_pl720_time_token_sweep/logs/H2s512p720TTtmean_h64.log
+tmean_h128,1,mean,128,0.0,0.3606959879398346,0.4204922020435333,H2s512p720TTtmean_h128,/home/bkai/CG2/SACQ/logs/etth2_pl720_time_token_sweep/logs/H2s512p720TTtmean_h128.log
+tlast_h128,1,last,128,0.0,0.36160463094711304,0.42108702659606934,H2s512p720TTtlast_h128,/home/bkai/CG2/SACQ/logs/etth2_pl720_time_token_sweep/logs/H2s512p720TTtlast_h128.log
+base,0,last,64,0.0,0.3832983672618866,0.4219626188278198,H2s512p720TTbase,/home/bkai/CG2/SACQ/logs/etth2_pl720_time_token_sweep/logs/H2s512p720TTbase.log

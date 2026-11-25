@@ -1,0 +1,45 @@
+{
+  "date": "2026-11-25",
+  "original_project_modified": false,
+  "model_or_training_parameters_modified": false,
+  "published": false,
+  "training_or_gpu_evaluation_started": false,
+  "completed": {
+    "frozen_paper_rows": 18,
+    "frozen_head_groups": 72,
+    "seed_records": 180,
+    "paper_metric_cells_matched": 144,
+    "mlp_width_configs_checked": 18,
+    "max_absolute_mlp_parameter_gap_pct": 0.0873826509114986,
+    "command_plans_verified_without_execution": 180,
+    "source_files_integrity_checked": 1586,
+    "python_files_parsed": 511,
+    "supervised_main_groups_indexed": 28,
+    "supervised_main_groups_with_candidates": 16,
+    "component_groups_indexed": 20,
+    "component_groups_with_candidates": 5,
+    "corruption_display_rows_mapped": 104,
+    "corruption_raw_rows_matched": 92,
+    "frozen_projects_merged": true
+  },
+  "remaining": [
+    "Confirm historical source attribution for supervised/component log candidates and remaining unmatched groups",
+    "Resolve 12 corruption display values without an exact matching raw evaluation row",
+    "Confirm remaining figure-specific historical CLI arguments where no invocation was recorded",
+    "Recorded warm-up and repeat count for the existing latency figure",
+    "End-to-end GPU adapters checks in the reorganized copy",
+    "Author-approved repository URL and license/third-party redistribution review"
+  ],
+  "artifacts": [
+    "configs/paper/frozen_table.json",
+    "docs/FROZEN_TABLE_MAPPING.md",
+    "docs/RECORDED_IMPLEMENTATION_DETAILS.md",
+    "paper_results/mlp_parameter_matching.csv",
+    "tools/paper_recipe.py",
+    "docs/SUPERVISED_SOURCE_MAPPING.md",
+    "reproduction/source_relations/table_sources.json",
+    "reproduction/source_relations/corruption_sources.json",
+    "reproduction/source_relations/figure_relations.json",
+    "docs/FROZEN_MERGE.md"
+  ]
+}

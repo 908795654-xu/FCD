@@ -1,0 +1,26 @@
+[
+  {
+    "path": "experiments/frozen/SACQ_TSFM/scripts/train.py",
+    "change": "Resolve project ROOT from script location instead of original server absolute path.",
+    "before_sha256": "275f82add521562449946628c147d41cacaed3ba4e93d7eacaa53401fd826cd6",
+    "after_sha256": "8f639cbb81d4b35eca0276a2100cbc2fdcbd4c36364f6f8b6e5734de5d08dfe2"
+  },
+  {
+    "path": "experiments/frozen/SACQ_TSFM/scripts/batch_memory_test.py",
+    "change": "Resolve project ROOT from script location instead of original server absolute path.",
+    "before_sha256": "87d141902bff1b41b509c1fba98167a5983f5b23bb6961caf6ad7ab5e485fb50",
+    "after_sha256": "8e51c230dfe5af93c29b0a588995957e682893d87c5e836f90e7a30d971ec76e"
+  },
+  {
+    "path": "experiments/frozen/SACQ_TSFM/scripts/smoke_test.py",
+    "change": "Resolve project ROOT from script location instead of original server absolute path.",
+    "before_sha256": "336672edcaf51761f9b04b09556891ea43c3565c01fbf02f2627fea9f80cf97c",
+    "after_sha256": "faa9b903d4321ddcfd14d95ae98bb82da6f40e4b4e0e48cb3127ffa946d21ecc"
+  },
+  {
+    "path": "experiments/frozen/SACQ_TSFM/scripts/run_remaining_matrix.py",
+    "change": "Resolve project ROOT from script location instead of original server absolute path.",
+    "before_sha256": "6f9333b5dd12018642233c464f6a42673219eaa3407e2adb5c8fc84a7e87cf9b",
+    "after_sha256": "b630fe01de4ca2402ef44a2b19af031413b7243bab70b0cba3a562671f973e72"
+  }
+]

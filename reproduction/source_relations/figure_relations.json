@@ -1,0 +1,68 @@
+[
+  {
+    "paper_label": "fig:corruption_etth1",
+    "paper_line": 722,
+    "plot": "external figure_inputs/plot_etth1_corruption_2x2.py",
+    "evaluation_entry": "scripts/experiments/eval_etth1_train_corruption_sl512.py",
+    "joins": "corruption_sources.json",
+    "historical_injection_cli_confirmed": false
+  },
+  {
+    "paper_label": "fig:sar_tail_shift",
+    "paper_line": 742,
+    "plot": "scripts/experiments/plot_tail_shift_noall_vertical_composite.py",
+    "data": [
+      "logs/etth1_sar_vs_sacq_search/spike_train_tail_shift.csv",
+      "logs/weather_sar_vs_sacq_search/spike_train_tail_shift.csv"
+    ],
+    "etth1": {
+      "pair": "spike_train",
+      "shift_min": 10,
+      "swap_near_far": false,
+      "swap_far_models": false
+    },
+    "weather": {
+      "pair": "spike_train_p5_pl720",
+      "shift_min": 0,
+      "swap_near_far": true,
+      "swap_far_models": true
+    }
+  },
+  {
+    "paper_label": "fig:alpha_horizon_spiked",
+    "paper_line": 761,
+    "plot": "scripts/experiments/plot_spike_outlier_alpha_variants.py",
+    "function": "fig_clean_vs_spiked",
+    "helper": "scripts/experiments/plot_spike_outlier_alpha_curves.py",
+    "data": [
+      "logs/etth1_spike_outlier_pl720/summary.csv",
+      "logs/etth1_spike_outlier_pl720/figures/alpha_variants_cache.npz"
+    ],
+    "code_observations": {
+      "training_pcts": [
+        0,
+        1,
+        3,
+        5
+      ],
+      "forecast_steps": 720,
+      "channel": "OT",
+      "injected_rng_seed": "2021 + test batch index"
+    },
+    "historical_cli_confirmed": false,
+    "note": "Cache retained without executing it; max_batches/noise settings are not inferred from argparse defaults."
+  },
+  {
+    "paper_label": "fig:efficiency_dmodel",
+    "paper_line": 802,
+    "plot": "scripts/experiments/plot_sacq_params_latency_combined.py",
+    "profiling": "scripts/experiments/plot_sacq_latency_vs_dmodel.py",
+    "data": [
+      "logs/sacq_param_sweep/sacq_param_sweep.csv",
+      "logs/sacq_param_sweep/sacq_latency_sweep.csv"
+    ],
+    "recorded_batch_size": 64,
+    "historical_warmup": null,
+    "historical_repeats": null
+  }
+]

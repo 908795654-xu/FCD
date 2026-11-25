@@ -1,0 +1,148 @@
+{
+  "complete": true,
+  "smoke": false,
+  "config": {
+    "dataset": "etth1",
+    "seed": 2026,
+    "batch_size": 32,
+    "max_epochs": 50,
+    "patience": 7,
+    "learning_rate": 0.0001,
+    "weight_decay": 0.01,
+    "loss": "mse",
+    "optimizer": "AdamW",
+    "scheduler": "ReduceLROnPlateau",
+    "scheduler_patience": 1,
+    "factor": 0.5,
+    "threshold": 0.0001,
+    "threshold_mode": "rel",
+    "min_lr": 1e-06,
+    "context_length": 512,
+    "future_patch_length": 16,
+    "cross_attn_layers": 2,
+    "n_heads": 16,
+    "head_dropout": 0.0,
+    "num_workers": 0,
+    "selection": "validation_mse",
+    "test_evaluated": false,
+    "frozen_backbone": true
+  },
+  "fingerprint": "a28b637aad48f151e7f9c7bde662db4f17979ee00c28240e7f67a36a608e6217",
+  "backbone": "timer",
+  "horizon": 720,
+  "variant": "linear",
+  "metadata": {
+    "implementation_profile": "readme_sacq_default_pe_v2",
+    "future_query_pe": false,
+    "pe_initializer": "zeros_uniform_minus_0.02_to_0.02",
+    "pe_learnable": false,
+    "backbone": "timer",
+    "head": "linear",
+    "context_length": 512,
+    "prediction_length": 720,
+    "n_vars": 7,
+    "hidden_dim": 1024,
+    "patch_count": 6,
+    "trainable_parameters": 4424400,
+    "frozen_parameters": 84142080
+  },
+  "core_init_sha256": "2c47dd7bf3e9b95b07fde137ebb3c1630704f9d37c195dfedd8559ac2540c99d",
+  "post_build_cpu_rng_sha256": "ade11995fe6818b5a14e500abbf8400f756e133629cc9cf2119d18af400a26d9",
+  "initial_val": {
+    "mse": 1.8873065389937218,
+    "mae": 1.0080813909158441
+  },
+  "best_val": {
+    "mse": 1.4400667387224446,
+    "mae": 0.8363488890945536
+  },
+  "best_epoch": 1,
+  "completed_epochs": 8,
+  "history": [
+    {
+      "epoch": 1,
+      "train_mse": 0.6156884657194666,
+      "val_mse": 1.4400667387224446,
+      "val_mae": 0.8363488890945536,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 0.0001,
+      "seconds": 3.6098559289239347
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.5638045009639945,
+      "val_mse": 1.4509404688020155,
+      "val_mae": 0.8354623202699727,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 0.0001,
+      "seconds": 3.5787997827865183
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.5525838880679711,
+      "val_mse": 1.4607620105490935,
+      "val_mae": 0.8368368406079585,
+      "learning_rate_used": 0.0001,
+      "learning_rate_next": 5e-05,
+      "seconds": 3.5619107922539115
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.54662168161075,
+      "val_mse": 1.461272025314159,
+      "val_mae": 0.836237880688789,
+      "learning_rate_used": 5e-05,
+      "learning_rate_next": 5e-05,
+      "seconds": 3.5637583606876433
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.5438290024917676,
+      "val_mse": 1.462115584706269,
+      "val_mae": 0.8363662437441554,
+      "learning_rate_used": 5e-05,
+      "learning_rate_next": 2.5e-05,
+      "seconds": 3.550984322093427
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.5415867353037421,
+      "val_mse": 1.4624952271013267,
+      "val_mae": 0.8363615064809692,
+      "learning_rate_used": 2.5e-05,
+      "learning_rate_next": 2.5e-05,
+      "seconds": 3.547847561072558
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.5404338250928198,
+      "val_mse": 1.4650233105319361,
+      "val_mae": 0.8370278055555238,
+      "learning_rate_used": 2.5e-05,
+      "learning_rate_next": 1.25e-05,
+      "seconds": 3.5447503719478846
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.5393703847662111,
+      "val_mse": 1.464649906844322,
+      "val_mae": 0.8369390446472919,
+      "learning_rate_used": 1.25e-05,
+      "learning_rate_next": 1.25e-05,
+      "seconds": 3.540080183185637
+    }
+  ],
+  "dataset_lengths": {
+    "train": 7409,
+    "val": 2161
+  },
+  "pe_gradient_checked": false,
+  "backbone_unchanged": true,
+  "test_evaluated": false,
+  "checkpoint": "/home/bkai/CG2/SACQ_TSFM_v2/checkpoints/pilot_pe_control_v1/etth1_p720_timer_linear_seed2026.pt",
+  "elapsed_seconds": 28.853113373275846,
+  "peak_allocated_mb": 535.2412109375,
+  "physical_gpu": "3",
+  "torch_version": "2.10.0+cu128",
+  "transformers_version": "4.53.3"
+}

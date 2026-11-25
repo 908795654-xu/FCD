@@ -1,0 +1,16 @@
+{
+  "paper": "D:\\桌面\\Xuzhengchao\\SACQ_workbench\\paper_v5\\source_clean\\main.tex",
+  "paper_sha256": "1eb49cdb525be920c0c73597b6cb7d06f711798fb95effa7b52cc7caa0deacf6",
+  "final_evaluation_records_scanned": 903,
+  "unreadable_logs": [],
+  "table_cells": 48,
+  "main_cells": 28,
+  "component_cells": 20,
+  "table_cells_with_candidates": 21,
+  "corruption_plot_rows": 104,
+  "corruption_rows_matched": 92,
+  "corruption_display_rows_matched": 104,
+  "corruption_rows_with_training_log_candidates": 91,
+  "verified_historical_latency_warmup": null,
+  "verified_historical_latency_repeats": null
+}

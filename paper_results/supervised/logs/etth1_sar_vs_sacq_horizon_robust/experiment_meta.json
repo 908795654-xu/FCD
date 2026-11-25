@@ -1,0 +1,37 @@
+{
+  "seq_len": 512,
+  "pred_len": 720,
+  "split": "test",
+  "seed": 2021,
+  "horizon_bounds": {
+    "near": [
+      0,
+      180
+    ],
+    "mid": [
+      180,
+      540
+    ],
+    "far": [
+      540,
+      720
+    ]
+  },
+  "corruption_groups": [
+    "scaffold"
+  ],
+  "tail_spike_len": 128,
+  "shift_tail_frac": 0.5,
+  "models": [
+    {
+      "tag": "sar_slc",
+      "label": "SAR+logcosh",
+      "setting": "H1s512p720SARslc_PatchTST_ETTh1_sl512_pl720_hSARslc_0"
+    },
+    {
+      "tag": "sacq_slc",
+      "label": "SACQ+logcosh",
+      "setting": "H1s512p720SACQslc_PatchTST_ETTh1_sl512_pl720_hSACQslc_0"
+    }
+  ]
+}

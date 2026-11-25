@@ -1,0 +1,265 @@
+{
+  "backbone": "timer",
+  "head": "sacq",
+  "context_length": 512,
+  "prediction_length": 720,
+  "n_vars": 21,
+  "hidden_dim": 1024,
+  "patch_count": 6,
+  "trainable_parameters": 26525293,
+  "frozen_parameters": 84142080,
+  "run_name": "weather_p720_timer_sacq_seed2026_frozen_v1",
+  "dataset": "weather",
+  "seed": 2026,
+  "device": "cuda:0",
+  "batch_size": 128,
+  "max_epochs": 50,
+  "completed_epochs": 28,
+  "patience": 7,
+  "learning_rate": 0.0001,
+  "weight_decay": 0.01,
+  "loss": "mse",
+  "best_epoch": 20,
+  "initial_val": {
+    "mse": 1.1479668894267108,
+    "mae": 0.6715605299545032
+  },
+  "best_val": {
+    "mse": 0.6212820099460724,
+    "mae": 0.42765384797081224
+  },
+  "test": {
+    "mse": 0.3218464878130709,
+    "mae": 0.3360031019787934
+  },
+  "history": [
+    {
+      "epoch": 0,
+      "train_mse": null,
+      "val_mse": 1.1479668894267108,
+      "val_mae": 0.6715605299545032,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 0.0
+    },
+    {
+      "epoch": 1,
+      "train_mse": 0.6455331059857712,
+      "val_mse": 0.6498968712752194,
+      "val_mae": 0.45563743168207455,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 153.30150122917257
+    },
+    {
+      "epoch": 2,
+      "train_mse": 0.6079107942082621,
+      "val_mse": 0.641503832435752,
+      "val_mae": 0.4470149936042793,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.28574494901113
+    },
+    {
+      "epoch": 3,
+      "train_mse": 0.601246007614294,
+      "val_mse": 0.6375779033301354,
+      "val_mae": 0.4430162582126868,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.1989274569787
+    },
+    {
+      "epoch": 4,
+      "train_mse": 0.5970870381865182,
+      "val_mse": 0.6356310141577999,
+      "val_mae": 0.44115089085848014,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.0150874380488
+    },
+    {
+      "epoch": 5,
+      "train_mse": 0.5939663322297666,
+      "val_mse": 0.6350447750414269,
+      "val_mae": 0.44062114712337924,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.34387722215615
+    },
+    {
+      "epoch": 6,
+      "train_mse": 0.591468566973059,
+      "val_mse": 0.6327372190061922,
+      "val_mae": 0.4384257996467818,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.16598539613187
+    },
+    {
+      "epoch": 7,
+      "train_mse": 0.5892849521089194,
+      "val_mse": 0.6315966694102855,
+      "val_mae": 0.4370325382289668,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 150.98325987206772
+    },
+    {
+      "epoch": 8,
+      "train_mse": 0.587473622279395,
+      "val_mse": 0.6329548856401535,
+      "val_mae": 0.4380105220507006,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.06523298984393
+    },
+    {
+      "epoch": 9,
+      "train_mse": 0.5859923671654369,
+      "val_mse": 0.6304155942024245,
+      "val_mae": 0.4360590268692947,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.10220805788413
+    },
+    {
+      "epoch": 10,
+      "train_mse": 0.5847084957012179,
+      "val_mse": 0.6296785478080121,
+      "val_mae": 0.4352447953005989,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.0527604778763
+    },
+    {
+      "epoch": 11,
+      "train_mse": 0.5835298271839303,
+      "val_mse": 0.6295759714409268,
+      "val_mae": 0.4349371497797837,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 150.80464445007965
+    },
+    {
+      "epoch": 12,
+      "train_mse": 0.5824401770869472,
+      "val_mse": 0.6291452777959474,
+      "val_mae": 0.4347847431173324,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.05815842701122
+    },
+    {
+      "epoch": 13,
+      "train_mse": 0.581190040032907,
+      "val_mse": 0.6280576182663237,
+      "val_mae": 0.434031993139136,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 150.87306906399317
+    },
+    {
+      "epoch": 14,
+      "train_mse": 0.5792835834370297,
+      "val_mse": 0.6257695146701843,
+      "val_mae": 0.4312922226582941,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.04387095896527
+    },
+    {
+      "epoch": 15,
+      "train_mse": 0.5757718535250068,
+      "val_mse": 0.6262054879644166,
+      "val_mae": 0.43073485422480956,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.11010061390698
+    },
+    {
+      "epoch": 16,
+      "train_mse": 0.5698761464582849,
+      "val_mse": 0.625242966978458,
+      "val_mae": 0.4306964730870981,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.15171761903912
+    },
+    {
+      "epoch": 17,
+      "train_mse": 0.5619491086242604,
+      "val_mse": 0.6236083693092621,
+      "val_mae": 0.4298061042793186,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.18815067014657
+    },
+    {
+      "epoch": 18,
+      "train_mse": 0.5533957997926661,
+      "val_mse": 0.6222771182190825,
+      "val_mae": 0.42869331429152857,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.25067377113737
+    },
+    {
+      "epoch": 19,
+      "train_mse": 0.5448440466329392,
+      "val_mse": 0.6221541654856387,
+      "val_mae": 0.42831430606430604,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.2017383328639
+    },
+    {
+      "epoch": 20,
+      "train_mse": 0.5362049861823012,
+      "val_mse": 0.6212820099460724,
+      "val_mae": 0.42765384797081224,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.22933556092903
+    },
+    {
+      "epoch": 21,
+      "train_mse": 0.5280478936234531,
+      "val_mse": 0.6227824414755219,
+      "val_mae": 0.426739966713181,
+      "learning_rate": 0.0001,
+      "epoch_seconds": 151.57443343708292
+    },
+    {
+      "epoch": 22,
+      "train_mse": 0.5201883013536771,
+      "val_mse": 0.6239275303069945,
+      "val_mae": 0.42630144603247283,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 151.36320956004784
+    },
+    {
+      "epoch": 23,
+      "train_mse": 0.5097038860622746,
+      "val_mse": 0.6290465543054828,
+      "val_mae": 0.4281243404413047,
+      "learning_rate": 5e-05,
+      "epoch_seconds": 151.40025936206803
+    },
+    {
+      "epoch": 24,
+      "train_mse": 0.5045832535638546,
+      "val_mse": 0.6276721698027502,
+      "val_mae": 0.42645034776731205,
+      "learning_rate": 2.5e-05,
+      "epoch_seconds": 151.23646975820884
+    },
+    {
+      "epoch": 25,
+      "train_mse": 0.499031640433773,
+      "val_mse": 0.6278003036150358,
+      "val_mae": 0.4259893807416129,
+      "learning_rate": 2.5e-05,
+      "epoch_seconds": 151.37171340198256
+    },
+    {
+      "epoch": 26,
+      "train_mse": 0.4962948813603174,
+      "val_mse": 0.6288728954990116,
+      "val_mae": 0.42618592105645675,
+      "learning_rate": 1.25e-05,
+      "epoch_seconds": 151.31208691908978
+    },
+    {
+      "epoch": 27,
+      "train_mse": 0.4933450621474824,
+      "val_mse": 0.6301159124440374,
+      "val_mae": 0.42619586531193676,
+      "learning_rate": 1.25e-05,
+      "epoch_seconds": 151.28387650894
+    }
+  ],
+  "elapsed_seconds": 4126.947890547104,
+  "peak_memory_mb": 18035.5625,
+  "backbone_unchanged": true,
+  "checkpoint_path": "/home/bkai/CG2/SACQ_TSFM/checkpoints/formal/weather_p720_timer_sacq_seed2026_frozen_v1.pt"
+}

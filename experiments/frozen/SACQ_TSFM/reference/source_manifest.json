@@ -1,0 +1,10 @@
+{
+  "README.md": "8c0fba29163578f4cf179f395e779b4650637a0776111bf7a1fc84669cc79ff7",
+  "paper.tex": "b34899d746fae82e4ea5ce4e0e49744f62dc6fbf30b2a81a91eaeb127d200aa1",
+  "layers/PatchTST_backbone.py": "054ba6d43e7a130c40fe24e4dd1c725d1aab48b967a02cc8abed9ad5d755b55a",
+  "layers/PatchTST_layers.py": "21c06c70a90c60ee2a269b5c600c702834dea22cdfd72915e6b0f8b4a28db3f6",
+  "layers/sacq_coarse.py": "570e8091161aa2812f059c6330d2e8cd0a710920a9428f08b5b9e96d3e37f7d1",
+  "layers/sacq_pe.py": "09db57f2f1b96fbf6264d38bc18c98432438cd2c446598ef7dbdbcaef2ba5ea5",
+  "models/PatchTST.py": "2c5334abdec86dceeb679beaef73f928ec9eaa965d25724ab252fdefef92981a",
+  "run_longExp.py": "ffd345b7218c6f1f4253d194f1e04d6735dca2af3e420acc39d51424b646828b"
+}
